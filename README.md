@@ -12,8 +12,8 @@ All kinds of Utils Collection for fast Unity prototype making. Currently self-us
 https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypeUtils#release
 ```
 
-#### main branch(Rapidly changing)
+#### dev branch(Rapidly changing)
 
 ```markdown
-https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypeUtils#main
+https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypeUtils#dev
 ```
