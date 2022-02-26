@@ -4,6 +4,8 @@ All kinds of Utils Collection for fast Unity prototype making. Currently self-us
 
 ## Installation
 
+Use Unity Package Manager:
+
 ```markdown
 https://github.com/iamabigartist/UnityPrototypeUtils.git#?path=/Assets/PrototypeUtils#release
 ```
