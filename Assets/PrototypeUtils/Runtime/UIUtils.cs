@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
-namespace MyUtils
+namespace PrototypeUtils
 {
     public static class UIUtils
     {

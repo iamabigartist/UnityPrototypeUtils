@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-namespace MUtility
+namespace PrototypeUtils
 {
     [Serializable]
     public class Dictionary_S<TKey, TValue> : Dictionary<TKey, TValue>, ISerializationCallbackReceiver
