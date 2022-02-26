@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/1.EditorCameraController.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/1.EditorCameraController/SampleScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/1.EditorCameraController/SampleScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/NewBehaviourScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/NewBehaviourScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/package.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityPrototypeUtils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityPrototypeUtils/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityPrototypeUtils/LICENSE.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityPrototypeUtils/NewBehaviourScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityPrototypeUtils/NewBehaviourScript.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityPrototypeUtils/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnityPrototypeUtils/package.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UnityEditorCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UnityEditorCameraController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +33,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="rider.run.widget.enabled.cache" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -86,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645807327515</updated>
       <workItem from="1645807337406" duration="150000" />
-      <workItem from="1645850961477" duration="730000" />
+      <workItem from="1645850961477" duration="1677000" />
     </task>
     <servers />
   </component>

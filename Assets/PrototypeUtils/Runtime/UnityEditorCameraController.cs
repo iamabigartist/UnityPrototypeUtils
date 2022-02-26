@@ -124,13 +124,15 @@ namespace MUtility
 
             target_t.Translate( Time.deltaTime * new Vector3( user_input.move.x, 0, user_input.move.y ), target_t );
 
-            var e = target_t.rotation.eulerAngles;
-            target_t.rotation = Quaternion.Euler( e + new Vector3( -user_input.rotate.y, user_input.rotate.x, 0 ) );
+            var rotation = target_t.rotation;
+            var e = rotation.eulerAngles;
+            rotation = Quaternion.Euler( e + new Vector3( -user_input.rotate.y, user_input.rotate.x, 0 ) );
+            target_t.rotation = rotation;
 
             target_t.Translate( Time.deltaTime * new Vector3( -user_input.drag.x, -user_input.drag.y, 0 ), target_t );
 
             t.position = Vector3.Lerp( t.position, target_t.position, 0.3f );
-            t.rotation = Quaternion.Lerp( t.rotation, target_t.rotation, 0.3f );
+            t.rotation = Quaternion.Lerp( t.rotation, rotation, 0.3f );
         }
 
     #endregion
@@ -140,8 +142,9 @@ namespace MUtility
         void Start()
         {
             target_t = new GameObject().transform;
-            target_t.parent = transform.parent;
-            t = transform;
+            var transform1 = transform;
+            target_t.parent = transform1.parent;
+            t = transform1;
             target_t.position = t.position;
             target_t.rotation = t.rotation;
         }
