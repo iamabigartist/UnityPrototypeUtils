@@ -1,7 +1,7 @@
 {
     "name": "com.chua.prototype-utils",
     "version": "0.0.0",
-    "displayName": "Prototype Utils",
+    "displayName": "Prototypes Utils",
     "description": "All kinds of Utils Collection for fast Unity prototype making.",
     "unity": "2019.4",
     "keywords": [
