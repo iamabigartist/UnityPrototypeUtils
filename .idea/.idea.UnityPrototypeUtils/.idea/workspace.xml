@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UnityEditorCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UnityEditorCameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +74,7 @@
       <updated>1645807327515</updated>
       <workItem from="1645807337406" duration="150000" />
       <workItem from="1645850961477" duration="1677000" />
+      <workItem from="1645855676146" duration="774000" />
     </task>
     <servers />
   </component>
