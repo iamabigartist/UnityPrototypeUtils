@@ -5,5 +5,5 @@ All kinds of Utils Collection for fast Unity prototype making. Currently self-us
 ## Installation
 
 ```markdown
-https://github.com/iamabigartist/UnityPrototypeUtils.git#?path=/Assets/PrototypeUtils
+https://github.com/iamabigartist/UnityPrototypeUtils.git#?path=/Assets/PrototypeUtils#release
 ```
