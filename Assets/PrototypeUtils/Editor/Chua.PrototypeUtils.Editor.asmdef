@@ -1,8 +1,12 @@
 {
     "name": "Chua.PrototypeUtils.Editor",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [],
+    "references": [
+        "GUID:3b4692cdbf7b5b64fa6bfae8501b1ed8"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
