@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-namespace MUtility
+namespace PrototypeUtils
 {
     public class UnityEditorCameraController : MonoBehaviour
     {
