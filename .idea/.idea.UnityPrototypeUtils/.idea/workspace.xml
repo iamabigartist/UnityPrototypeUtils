@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E1 EditorCameraController.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E1 EditorCameraController/New Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E1 EditorCameraController/New Scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI/New Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI/New Scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI/RangeVertexGUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI/RangeVertexGUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/1.EditorCameraController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/1.EditorCameraController/New Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/1.EditorCameraController/New Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +88,7 @@
       <workItem from="1645807337406" duration="150000" />
       <workItem from="1645850961477" duration="1677000" />
       <workItem from="1645855676146" duration="774000" />
+      <workItem from="1645865233487" duration="1542000" />
     </task>
     <servers />
   </component>
