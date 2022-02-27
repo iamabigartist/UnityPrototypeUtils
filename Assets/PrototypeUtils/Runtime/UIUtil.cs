@@ -118,25 +118,28 @@ namespace PrototypeUtils
 
     #endregion
 
-        public static class ScreenCoordinate3DUI
-        {
-            public static void DrawPositionLabel(Camera camera, Vector3 position, string content, Vector2 size)
-            {
-                var rect_pos = camera.WorldToOnGameGUIScreenPosition( position );
-                var rect = PositionSizeRect( rect_pos, size );
-                GUI.Label( rect, content );
-            }
+    #region ScreenCoordinate3DUI
 
-            public static void DrawPositionLabelArray(Camera camera, Vector3[] position, string[] content, Vector2 size)
+        public static void DrawPositionLabel(Camera camera, Vector3 position, string content, Vector2 size)
+        {
+            var rect_pos = camera.WorldToOnGameGUIScreenPosition( position );
+            var rect = PositionSizeRect( rect_pos, size );
+            GUI.Label( rect, content );
+        }
+
+        public static void DrawPositionLabelArray(Camera camera, Vector3[] position, string[] content, Vector2 size)
+        {
+            for (int i = 0; i < position.Length; i++)
             {
-                for (int i = 0; i < position.Length; i++)
-                {
-                    var rect_pos = camera.WorldToOnGameGUIScreenPosition( position[i] );
-                    var rect = PositionSizeRect( rect_pos, size );
-                    GUI.Label( rect, content[i] );
-                }
+                var rect_pos = camera.WorldToOnGameGUIScreenPosition( position[i] );
+                var rect = PositionSizeRect( rect_pos, size );
+                var b_rect = PositionSizeRect( rect_pos, new Vector2( 5, 5 ) );
+                GUI.Label( rect, content[i] );
+                GUI.Box( b_rect, Texture2D.whiteTexture );
             }
         }
+
+    #endregion
 
     }
 }
