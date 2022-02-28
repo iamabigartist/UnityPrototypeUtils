@@ -68,14 +68,25 @@ namespace PrototypeUtils
 
     #region Coordinate
 
-        public static Vector3 WorldToOnGameGUIScreenPosition(this Camera camera, Vector3 world_position)
+        public static Vector2 WorldToOnGameGUIScreenPosition(this Camera camera, Vector3 world_position)
         {
             var screen_position = camera.WorldToScreenPoint( world_position );
 
-            return new Vector3( screen_position.x, Screen.height - screen_position.y, screen_position.z );
+            //method1 seems right
+            // var gui_v1 = GUIUtility.ScreenToGUIPoint( screen_position );
+            // return new Vector2( gui_v1.x, Screen.height - gui_v1.y );
+
+            //method2 seems right else well
+            // var gui_v2 = (screen_position.x, Screen.height - screen_position.y).V();
+            // return GUIUtility.ScreenToGUIPoint( gui_v2 );
+
+            //The conclusion maybe is that the whole game view GUI coordinate is the same as the screen coordinate
+            //And the GUIUtility.ScreenToGUIPoint should be used in a GUIGroup.
+            return new Vector2( screen_position.x, Screen.height - screen_position.y );
+
         }
 
-        [Obsolete( "Scene视图的坐标系和camera屏幕坐标不兼容" )]
+        [Obsolete( "Scene View coordinate is not compatible with camera Screen Space coordinate" )]
         public static Vector3 WorldToOnSceneViewGUIScreenPosition(this Camera camera, SceneView view, Vector3 world_position)
         {
             var screen_position = camera.WorldToScreenPoint( world_position );
@@ -133,9 +144,9 @@ namespace PrototypeUtils
             {
                 var rect_pos = camera.WorldToOnGameGUIScreenPosition( position[i] );
                 var rect = PositionSizeRect( rect_pos, size );
-                var b_rect = PositionSizeRect( rect_pos, new Vector2( 5, 5 ) );
+                var b_rect = PositionSizeRect( rect_pos, (5f, 5f).V() );
                 GUI.Label( rect, content[i] );
-                GUI.Box( b_rect, Texture2D.whiteTexture );
+                GUI.Box( b_rect, GUIContent.none );
             }
         }
 
