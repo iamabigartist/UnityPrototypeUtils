@@ -43,5 +43,17 @@ namespace PrototypeUtils
         }
 
     #endregion
+
+    #region Precision
+
+        public static Vector3 Round(this Vector3 v, int digit, MidpointRounding rounding = MidpointRounding.AwayFromZero)
+        {
+            return (
+                (float)Math.Round( v.x, digit, rounding ),
+                (float)Math.Round( v.y, digit, rounding ),
+                (float)Math.Round( v.z, digit, rounding )).V();
+        }
+
+    #endregion
     }
 }
