@@ -82,6 +82,23 @@ namespace PrototypeUtils
                 (float)Math.Round( v.z, digit, rounding )).V();
         }
 
+        public static float3 Round(this float3 f3, int digit, MidpointRounding rounding = MidpointRounding.AwayFromZero)
+        {
+            return new float3(
+                (float)Math.Round( f3.x, digit, rounding ),
+                (float)Math.Round( f3.y, digit, rounding ),
+                (float)Math.Round( f3.z, digit, rounding ) );
+        }
+        
+        public static float4 Round(this float4 f3, int digit, MidpointRounding rounding = MidpointRounding.AwayFromZero)
+        {
+            return new float4(
+                (float)Math.Round( f3.x, digit, rounding ),
+                (float)Math.Round( f3.y, digit, rounding ),
+                (float)Math.Round( f3.z, digit, rounding ),
+                (float)Math.Round( f3.w, digit, rounding ) );
+        }
+
         public static Vector3 IntRound(this Vector3 v)
         {
             return new Vector3(

@@ -17,7 +17,6 @@ namespace PrototypeUtils
 
             return unzipped_array;
         }
-
         public static List<VectorUtil.Triangle> VerticesArrayToTrianglesList(this Vector3[] vertices)
         {
             var array = new VectorUtil.Triangle[vertices.Length / 3];
