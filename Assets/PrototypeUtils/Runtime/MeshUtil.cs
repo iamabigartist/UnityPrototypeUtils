@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using UnityEngine;
 namespace PrototypeUtils
 {
     public static class MeshUtil
@@ -13,6 +16,19 @@ namespace PrototypeUtils
             }
 
             return unzipped_array;
+        }
+
+        public static List<VectorUtil.Triangle> VerticesArrayToTrianglesList(this Vector3[] vertices)
+        {
+            var array = new VectorUtil.Triangle[vertices.Length / 3];
+            Parallel.For( 0, vertices.Length / 3, i =>
+            {
+                array[i] = new VectorUtil.Triangle(
+                    vertices[3 * i],
+                    vertices[3 * i + 1],
+                    vertices[3 * i + 2] );
+            } );
+            return array.ToList();
         }
     }
 }
