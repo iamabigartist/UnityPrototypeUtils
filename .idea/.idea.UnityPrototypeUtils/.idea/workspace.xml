@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/MeshUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/MeshUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/VectorUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/VectorUtil.cs" afterDir="false" />
-    </list>
+    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +88,7 @@
       <workItem from="1645866890198" duration="3780000" />
       <workItem from="1645932656309" duration="9128000" />
       <workItem from="1646104634232" duration="2847000" />
-      <workItem from="1646108907492" duration="2495000" />
+      <workItem from="1646108907492" duration="2798000" />
     </task>
     <servers />
   </component>
