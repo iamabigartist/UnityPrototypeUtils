@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using PrototypeUtils;
 using UnityEditor;
 using UnityEngine;
-namespace GPUVoxelTest
+namespace PrototypeUtils.Editor
 {
     [Serializable]
     public class MeshSerializer : EditorWindow
@@ -32,7 +31,7 @@ namespace GPUVoxelTest
         [SerializeField]
         Mesh m_mesh;
 
-        Editor mesh_editor;
+        UnityEditor.Editor mesh_editor;
         [SerializeField]
         List<VectorUtil.Triangle> m_triangle_vertices;
         [SerializeField]
@@ -66,7 +65,7 @@ namespace GPUVoxelTest
             m_uv1 = m_mesh.uv.ToList();
             m_normals = m_mesh.normals.ToList();
             m_tangents = m_mesh.tangents.ToList();
-            mesh_editor = Editor.CreateEditor( m_mesh );
+            mesh_editor = UnityEditor.Editor.CreateEditor( m_mesh );
             this_.Update();
         }
 
