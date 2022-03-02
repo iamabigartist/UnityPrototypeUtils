@@ -6,6 +6,22 @@ namespace PrototypeUtils
 {
     public static class UIUtils
     {
+
+    #region DataSync
+
+        public static void UpdateValue<T>(
+            Func<T> left_getter,
+            Func<T> right_getter,
+            Action<T> left_setter)
+        {
+            if (!left_getter().Equals( right_getter() ))
+            {
+                left_setter( right_getter() );
+            }
+        }
+
+    #endregion
+
     #region Layout
 
         public static Rect GetPart(
@@ -82,7 +98,7 @@ namespace PrototypeUtils
 
             //The conclusion maybe is that the whole game view GUI coordinate is the same as the screen coordinate
             //And the GUIUtility.ScreenToGUIPoint should be used in a GUIGroup.
-            return new Vector2( screen_position.x, Screen.height - screen_position.y );
+            return new(screen_position.x, Screen.height - screen_position.y);
 
         }
 
@@ -91,11 +107,11 @@ namespace PrototypeUtils
         {
             var screen_position = camera.WorldToScreenPoint( world_position );
 
-            return new Vector3( screen_position.x, view.position.height - screen_position.y, screen_position.z );
+            return new(screen_position.x, view.position.height - screen_position.y, screen_position.z);
         }
         public static Rect PositionSizeRect(Vector2 position, Vector2 size)
         {
-            return new Rect( position - size / 2f, size );
+            return new(position - size / 2f, size);
         }
         public static Vector2 ParentPositionToLocal(this Rect r, Vector2 pos)
         {
