@@ -7,6 +7,8 @@ namespace PrototypeUtils
 
     #region Config
 
+        const float LERP = 0.3f;
+
         [Tooltip( "WASD Move" )][Range( 0, 6 )]
         public float MoveSpeedLog10 = 2f;
         float move_speed => Mathf.Pow( 10, MoveSpeedLog10 ) * speed_ratio;
@@ -35,14 +37,20 @@ namespace PrototypeUtils
     #region Component
 
         Transform target_t;
-        Transform t;
+        Transform camera_t;
+
+    #endregion
+
+    #region State
+
+        Vector3 target_rotation_euler;
 
     #endregion
 
     #region Operation
 
-        static Vector2 mouse_move => new Vector2( Input.GetAxis( "Mouse X" ), Input.GetAxis( "Mouse Y" ) );
-        static Vector2 wasd_move => new Vector2( Input.GetAxis( "Horizontal" ), Input.GetAxis( "Vertical" ) );
+        static Vector2 mouse_move => new(Input.GetAxis( "Mouse X" ), Input.GetAxis( "Mouse Y" ));
+        static Vector2 wasd_move => new(Input.GetAxis( "Horizontal" ), Input.GetAxis( "Vertical" ));
         static float mouse_wheel_move => Input.GetAxis( "Mouse ScrollWheel" );
 
         [Flags]
@@ -92,7 +100,7 @@ namespace PrototypeUtils
                 move_speed *
                 (wasd_move +
                  (user_input.input_mode == InputMode.None ?
-                     new Vector2( 0, mouse_wheel_move * 10 )
+                     new(0, mouse_wheel_move * 10)
                      : Vector2.zero));
 
             user_input.drag =
@@ -112,41 +120,43 @@ namespace PrototypeUtils
 
         }
 
-        void apply_input()
+        void apply_input_state_target()
         {
+            //mouse wheel change speed ratio
             speed_ratio +=
                 user_input.speed_change * scroll_sensitive *
                 Mathf.Pow( 10, Mathf.CeilToInt( Mathf.Log10( speed_ratio ) ) - 1.5f );
+
             if (speed_ratio < 0)
             {
                 speed_ratio = 1e-10f;
             }
 
+            //Target position move change
             target_t.Translate( Time.deltaTime * new Vector3( user_input.move.x, 0, user_input.move.y ), target_t );
-
-            var rotation = target_t.rotation;
-            var e = rotation.eulerAngles;
-            rotation = Quaternion.Euler( e + new Vector3( -user_input.rotate.y, user_input.rotate.x, 0 ) );
-            target_t.rotation = rotation;
-
             target_t.Translate( Time.deltaTime * new Vector3( -user_input.drag.x, -user_input.drag.y, 0 ), target_t );
 
-            t.position = Vector3.Lerp( t.position, target_t.position, 0.3f );
-            t.rotation = Quaternion.Lerp( t.rotation, rotation, 0.3f );
+            //Target rotation and state rotation angle change
+            target_rotation_euler += new Vector3( -user_input.rotate.y, user_input.rotate.x, 0 );
+            target_t.rotation = Quaternion.Euler( target_rotation_euler );
+
+            //Lerp transform to camera
+            camera_t.position = Vector3.Lerp( camera_t.position, target_t.position, LERP );
+            camera_t.rotation = Quaternion.Lerp( camera_t.rotation, Quaternion.Euler( target_rotation_euler ), LERP );
         }
 
     #endregion
 
-    #region UnityEventHandler
+    #region EntryPoint
 
         void Start()
         {
-            target_t = new GameObject().transform;
-            var transform1 = transform;
-            target_t.parent = transform1.parent;
-            t = transform1;
-            target_t.position = t.position;
-            target_t.rotation = t.rotation;
+            target_t = new GameObject( "CameraTransformTarget" ).transform;
+            target_t.parent = transform.parent;
+            camera_t = transform;
+            target_t.position = camera_t.position;
+            target_t.rotation = camera_t.rotation;
+            target_rotation_euler = camera_t.rotation.eulerAngles;
         }
 
         void Update()
@@ -155,7 +165,7 @@ namespace PrototypeUtils
             // Debug.Log($"h: {Input.GetAxis("Horizontal")}, v: {Input.GetAxis("Vertical")}");
             check_input_mode();
             refresh_input();
-            apply_input();
+            apply_input_state_target();
         }
 
 
@@ -179,11 +189,12 @@ namespace PrototypeUtils
                         Mathf.Lerp( 0.01f, 0.000001f,
                             Mathf.Pow( box_alpha, 1 / 3f ) ) );
             }
-            GUI.color = new Color( 1, 1, 1, box_alpha );
-            GUI.Box( new Rect(
+
+            GUI.color = new(1, 1, 1, box_alpha);
+            GUI.Box( new(
                     window_width / 2f - box_width / 2f,
                     window_height / 2f - box_height,
-                    box_width, box_height ),
+                    box_width, box_height),
                 $"{Math.Round( speed_ratio, 6 )}x" );
             GUI.color = Color.white;
         }
