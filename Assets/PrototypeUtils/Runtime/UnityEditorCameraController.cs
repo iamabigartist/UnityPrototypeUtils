@@ -151,7 +151,7 @@ namespace PrototypeUtils
 
         void Start()
         {
-            target_t = new GameObject( "CameraTransformTarget" ).transform;
+            target_t = new GameObject( $"CameraTransformTarget_{this.name}" ).transform;
             target_t.parent = transform.parent;
             camera_t = transform;
             target_t.position = camera_t.position;

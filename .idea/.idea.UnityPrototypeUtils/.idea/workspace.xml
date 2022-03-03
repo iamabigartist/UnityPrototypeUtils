@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/EnumerateUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/EnumerateUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +95,7 @@
       <workItem from="1646210735089" duration="674000" />
       <workItem from="1646221033348" duration="1472000" />
       <workItem from="1646273551454" duration="2822000" />
+      <workItem from="1646291280211" duration="104000" />
     </task>
     <servers />
   </component>
