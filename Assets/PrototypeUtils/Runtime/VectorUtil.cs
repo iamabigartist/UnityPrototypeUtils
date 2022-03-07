@@ -38,6 +38,10 @@ namespace PrototypeUtils
         {
             return new(tuple.x, tuple.y, tuple.z);
         }
+        public static float3 f3(this (int x, int y, int z) tuple)
+        {
+            return new(tuple.x, tuple.y, tuple.z);
+        }
         public static Vector4 V(this (float x, float y, float z, float w) tuple)
         {
             return new(tuple.x, tuple.y, tuple.z, tuple.w);
