@@ -2,7 +2,7 @@
 using UnityEngine;
 namespace PrototypeUtils
 {
-    public static class TextureUtility
+    public static class TextureUtil
     {
         public static Texture2D CPU_DXT1ToDXT5(
             this Texture2D src_texture)

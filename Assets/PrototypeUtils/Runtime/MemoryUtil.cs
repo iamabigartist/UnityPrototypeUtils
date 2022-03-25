@@ -2,7 +2,7 @@
 using System.Runtime.Serialization.Json;
 namespace PrototypeUtils
 {
-    public static class MemoryUtility
+    public static class MemoryUtil
     {
         public static long GetObjectByteSize<T>(this T t) where T : class
         {

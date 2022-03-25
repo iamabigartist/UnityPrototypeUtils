@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 namespace PrototypeUtils
 {
@@ -76,10 +77,12 @@ namespace PrototypeUtils
                 if (Input.GetKeyDown( KeyCode.Mouse1 ))
                 {
                     user_input.input_mode = InputMode.Rotate;
+                    Cursor.lockState = CursorLockMode.Locked;
                 }
                 else if (Input.GetKeyDown( KeyCode.Mouse2 ))
                 {
                     user_input.input_mode = InputMode.Drag;
+                    Cursor.lockState = CursorLockMode.Locked;
                 }
             }
             else
@@ -89,6 +92,8 @@ namespace PrototypeUtils
                     Input.GetKeyUp( KeyCode.Mouse2 ) && user_input.input_mode == InputMode.Drag)
                 {
                     user_input.input_mode = InputMode.None;
+                    Cursor.lockState = CursorLockMode.None;
+
                 }
             }
 
@@ -151,7 +156,7 @@ namespace PrototypeUtils
 
         void Start()
         {
-            target_t = new GameObject( $"CameraTransformTarget_{this.name}" ).transform;
+            target_t = new GameObject( $"CameraTransformTarget_{name}" ).transform;
             target_t.parent = transform.parent;
             camera_t = transform;
             target_t.position = camera_t.position;

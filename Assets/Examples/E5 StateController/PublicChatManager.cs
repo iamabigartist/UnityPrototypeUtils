@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Timers;
 namespace Examples.E5_StateController
 {
     public interface IChatterEnumerator<TChatter> : IEnumerator<TChatter> where TChatter : class, IChatter { }
@@ -41,11 +42,6 @@ namespace Examples.E5_StateController
             /// </summary>
             Enroll
         }
-        ChatMode chat_mode;
-
-    #endregion
-
-    #region Data
 
         public class EnrollChatQueue : IChatterEnumerator<TChatter>
         {
@@ -132,16 +128,36 @@ namespace Examples.E5_StateController
 
         }
 
+        ChatMode cur_chat_mode;
+        TChatter cur_main_chatter;
+        float main_chatter_start_time;
+        Timer main_chatter_timer;
         EnrollChatQueue enroll_chat_queue;
         CharacterNameOrderTableChatQueue character_name_order_table_chat_queue;
 
     #endregion
 
+    #region Data
+
+    #endregion
+
     #region Process
 
+        void FreeModeInit() { }
         void FreeModeUpdate() { }
-        void TurnModeUpdate() { }
+        void FreeModeTerminate() { }
+
+        void TurnModeInit()
+        {
+        }
+        void TurnModeUpdate()
+        {
+        }
+        void TurnModeTerminate() { }
+
+        void EnrollModeInit() { }
         void EnrollModeUpdate() { }
+        void EnrollModeTerminate() { }
 
     #endregion
 
@@ -149,17 +165,20 @@ namespace Examples.E5_StateController
 
     #region Entry
 
-        public PublicChatSystem(SetSingleChatter SetMute, Action<string> Log, UpdateState StateChangeNotification)
+        public PublicChatSystem(SetSingleChatter SetMute, Action<string> Log, UpdateStateCallback StateChangeNotification, string[] character_order_table)
         {
-            chat_mode = ChatMode.Free;
+            cur_chat_mode = ChatMode.Free;
             this.SetMute = SetMute;
             this.Log = Log;
             this.StateChangeNotification = StateChangeNotification;
+            enroll_chat_queue = new();
+            character_name_order_table_chat_queue = new(character_order_table);
+            cur_main_chatter = null;
         }
 
         public void Update()
         {
-            switch (chat_mode)
+            switch (cur_chat_mode)
             {
                 case ChatMode.Free:
                     FreeModeUpdate();
@@ -180,29 +199,79 @@ namespace Examples.E5_StateController
 
     #endregion
 
-    #region ExternalBehaviour
+    #region Action
+
+    #region External
 
         public delegate void SetSingleChatter(TChatter chatter, bool is_mute);
         public event SetSingleChatter SetMute;
         public event Action<string> Log;
-        public delegate void UpdateState(ChatMode prev_chatMode, ChatMode new_chatMode);
-        public event UpdateState StateChangeNotification;
+        public delegate void UpdateStateCallback(ChatMode prev_chatMode, ChatMode new_chatMode);
+        public event UpdateStateCallback StateChangeNotification;
 
     #endregion
 
-    #region Behaviour
+    #region Internal
 
-        public void ChangeState() { }
+        public void TerminateCurState()
+        {
+            switch (cur_chat_mode)
+            {
+                case ChatMode.Free:
+                    FreeModeTerminate();
+
+                    break;
+
+                case ChatMode.Turn:
+                    TurnModeTerminate();
+
+                    break;
+
+                case ChatMode.Enroll:
+                    EnrollModeTerminate();
+
+                    break;
+            }
+        }
+        public void InitToState(ChatMode mode)
+        {
+            cur_chat_mode = mode;
+            switch (cur_chat_mode)
+            {
+                case ChatMode.Free:
+                    FreeModeTerminate();
+
+                    break;
+
+                case ChatMode.Turn:
+                    TurnModeTerminate();
+
+                    break;
+
+                case ChatMode.Enroll:
+                    EnrollModeTerminate();
+
+                    break;
+            }
+        }
+
+        public void ResetToState(ChatMode new_mode)
+        {
+            TerminateCurState();
+
+        }
 
         public void QueueUpUser(TChatter chatter)
         {
-            if (chat_mode != ChatMode.Enroll)
+            if (cur_chat_mode != ChatMode.Enroll)
             {
                 Log( $"Currently not in the state {nameof(ChatMode.Enroll)}, can not queue up." );
 
                 return;
             }
         }
+
+    #endregion
 
     #endregion
 
