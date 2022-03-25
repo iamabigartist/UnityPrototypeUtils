@@ -70,13 +70,6 @@ namespace PrototypeUtils
         }
     }
 
-    public abstract class SingletonScriptableObject<T> : ScriptableObject
-        where T : SingletonScriptableObject<T>
-    {
-        protected T instance;
-        protected T Instance => instance;
-    }
-
 
 
 }
