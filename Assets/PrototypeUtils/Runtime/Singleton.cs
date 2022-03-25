@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using UnityEditor;
 using UnityEngine;
 using static PrototypeUtils.AsyncUtil;
 namespace PrototypeUtils
@@ -58,8 +57,7 @@ namespace PrototypeUtils
     public abstract class SingletonScriptableObjectAsset<T> : ScriptableObject, IAsyncSingleton<T>
         where T : SingletonScriptableObjectAsset<T>
     {
-        [InitializeOnLoadMethod]
-        static void LoadSingleton()
+        public static void LoadSingleton()
         {
             var instance_ = Resources.LoadAll<T>( "" );
 
