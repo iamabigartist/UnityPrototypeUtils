@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using UnityEditor;
 using UnityEngine;
 using static PrototypeUtils.AsyncUtil;
 namespace PrototypeUtils
@@ -49,7 +50,7 @@ namespace PrototypeUtils
             }
             else
             {
-                throw new($"{nameof(T)} multiple singleton systems!");
+                throw new($"{typeof(T)} multiple singleton systems!");
             }
         }
     }
@@ -57,13 +58,14 @@ namespace PrototypeUtils
     public abstract class SingletonScriptableObjectAsset<T> : ScriptableObject, IAsyncSingleton<T>
         where T : SingletonScriptableObjectAsset<T>
     {
-        static SingletonScriptableObjectAsset()
+        [InitializeOnLoadMethod]
+        static void LoadSingleton()
         {
             var instance_ = Resources.LoadAll<T>( "" );
 
             if (instance_.Length != 1)
             {
-                throw new($"{nameof(T)} multiple singleton systems!");
+                throw new($"{typeof(T)} multiple singleton systems!");
             }
 
             IAsyncSingleton<T>.instance = instance_.Single();

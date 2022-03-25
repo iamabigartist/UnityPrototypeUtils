@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="" />
+    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Singleton.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +116,8 @@
       <workItem from="1648002733101" duration="14439000" />
       <workItem from="1648087828948" duration="15457000" />
       <workItem from="1648123794649" duration="6190000" />
-      <workItem from="1648177148221" duration="3180000" />
+      <workItem from="1648177148221" duration="3553000" />
+      <workItem from="1648180828362" duration="653000" />
     </task>
     <servers />
   </component>
