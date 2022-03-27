@@ -225,164 +225,169 @@ namespace PrototypeUtils.StateMachine0
 #endregion
 #region Node
 
-    public abstract class Machine
-    {
-        public abstract void OnMachineEnter(string last_state_name);
-        public abstract void OnMachineExit(string next_state_name);
-        public abstract void OnMachineUpdate();
-    }
-    public abstract class NoneMachine : Machine { }
-
-    /// <summary>
-    ///     A machine used as a state of other machines
-    /// </summary>
-    /// <typeparam name="TStatedMachine">The controlled machine that use this machine as a state</typeparam>
-    public abstract class StateMachine<TStatedMachine> : Machine
-        where TStatedMachine : Machine
-    {
-        public TStatedMachine m_stated_machine;
-        public virtual void OnStateEnter(string last_state_name)
-        {
-            OnMachineEnter( last_state_name );
-        }
-        public virtual void OnStateExit(string next_state_name)
-        {
-            OnMachineExit( next_state_name );
-        }
-        public virtual void OnStateUpdate()
-        {
-            OnMachineUpdate();
-        }
-    }
-
-    /// <summary>
-    ///     <para>From <see cref="StateMachine{TStatedMachine}" />: <inheritdoc cref="StateMachine{TStatedMachine}" /></para>
-    ///     <para>At the same time, a machine that use other machine as states.</para>
-    /// </summary>
-    /// <typeparam name="TCurrentMachine">
-    ///     The real type of this machine, used to tell the states what type of machine they are controlling.
-    /// </typeparam>
-    /// <typeparam name="TStatedMachine">
-    ///     <inheritdoc cref="StateMachine" />
-    /// </typeparam>
-    public abstract class StatedStateMachine<TCurrentMachine, TStatedMachine> : StateMachine<TStatedMachine>
-        where TStatedMachine : Machine
-        where TCurrentMachine : StatedStateMachine<TCurrentMachine, TStatedMachine>
-    {
-        public Dictionary<string, StateMachine<TCurrentMachine>> m_states;
-        public string current_state_name;
-
-        protected StatedStateMachine(Dictionary<string, StateMachine<TCurrentMachine>> states)
-        {
-            m_states = states;
-            current_state_name = string.Empty;
-
-            foreach (var state in m_states.Values)
-            {
-                state.m_stated_machine = this as TCurrentMachine;
-            }
-        }
-
-        public void TranslateState(string to_state_name)
-        {
-            m_states[current_state_name].OnStateExit( to_state_name );
-            m_states[to_state_name].OnStateEnter( current_state_name );
-            current_state_name = to_state_name;
-        }
-
-        public sealed override void OnStateEnter(string last_state_name)
-        {
-            m_states[current_state_name].OnStateEnter( string.Empty );
-            OnMachineEnter( last_state_name );
-        }
-
-        public sealed override void OnStateExit(string next_state_name)
-        {
-            m_states[current_state_name].OnStateExit( string.Empty );
-            OnMachineExit( next_state_name );
-        }
-
-        public sealed override void OnStateUpdate()
-        {
-            m_states[current_state_name].OnStateUpdate();
-            OnMachineUpdate();
-        }
-
-    }
+    // public abstract class Machine
+    // {
+    //     public abstract void OnMachineEnter(string last_state_name);
+    //     public abstract void OnMachineExit(string next_state_name);
+    //     public abstract void OnMachineUpdate();
+    // }
+    // public abstract class NoneMachine : Machine { }
+    //
+    // /// <summary>
+    // ///     A machine used as a state of other machines
+    // /// </summary>
+    // /// <typeparam name="TStatedMachine">The controlled machine that use this machine as a state</typeparam>
+    // public abstract class StateMachine<TStatedMachine> : Machine
+    //     where TStatedMachine : Machine
+    // {
+    //     public readonly string state_name;
+    //     public TStatedMachine m_stated_machine;
+    //     protected StateMachine(string state_name) { this.state_name = state_name; }
+    //     public virtual void OnStateEnter(string last_state_name)
+    //     {
+    //         OnMachineEnter( last_state_name );
+    //     }
+    //     public virtual void OnStateExit(string next_state_name)
+    //     {
+    //         OnMachineExit( next_state_name );
+    //     }
+    //     public virtual void OnMachineUpdate()
+    //     {
+    //         OnMachineUpdate();
+    //     }
+    // }
+    //
+    // /// <summary>
+    // ///     <para>From <see cref="StateMachine{TStatedMachine}" />: <inheritdoc cref="StateMachine{TStatedMachine}" /></para>
+    // ///     <para>At the same time, a machine that use other machine as states.</para>
+    // /// </summary>
+    // /// <typeparam name="TCurrentMachine">
+    // ///     The real type of this machine, used to tell the states what type of machine they are controlling.
+    // /// </typeparam>
+    // /// <typeparam name="TStatedMachine">
+    // ///     <inheritdoc cref="StateMachine" />
+    // /// </typeparam>
+    // public abstract class StatedStateMachine<TCurrentMachine, TStatedMachine> : StateMachine<TStatedMachine>
+    //     where TStatedMachine : Machine
+    //     where TCurrentMachine : StatedStateMachine<TCurrentMachine, TStatedMachine>
+    // {
+    //     public Dictionary<string, StateMachine<TCurrentMachine>> m_states;
+    //     public string current_state_name;
+    //
+    //     protected StatedStateMachine(Dictionary<string, StateMachine<TCurrentMachine>> states, string state_name = null) : base( state_name )
+    //     {
+    //         m_states = states;
+    //         current_state_name = string.Empty;
+    //
+    //         foreach (var state in m_states.Values)
+    //         {
+    //             state.m_stated_machine = this as TCurrentMachine;
+    //         }
+    //     }
+    //
+    //     public void TranslateState(string to_state_name)
+    //     {
+    //         m_states[current_state_name].OnStateExit( to_state_name );
+    //         m_states[to_state_name].OnStateEnter( current_state_name );
+    //         current_state_name = to_state_name;
+    //     }
+    //
+    //     public sealed override void OnStateEnter(string last_state_name)
+    //     {
+    //         m_states[current_state_name].OnStateEnter( string.Empty );
+    //         OnMachineEnter( last_state_name );
+    //     }
+    //
+    //     public sealed override void OnStateExit(string next_state_name)
+    //     {
+    //         m_states[current_state_name].OnStateExit( string.Empty );
+    //         OnMachineExit( next_state_name );
+    //     }
+    //
+    //     public sealed override void OnMachineUpdate()
+    //     {
+    //         m_states[current_state_name].OnMachineUpdate();
+    //         OnMachineUpdate();
+    //     }
+    //
+    // }
 
 #endregion
 
 #region Example
 
-    public class AppleStory : StatedStateMachine<AppleStory, NoneMachine>
-    {
-        public string story_text;
-        public event Action<string> DrawStoryTextGUI;
-        public event Func<string, bool> DrawButton;
-        public event Action DrawDogStatesViewer;
-        public event Action<int> GiveTheMountainApples;
-        public AppleStory() : base( new()
-        {
-            { "Chapter1", new Story1() },
-            { "Chapter2", new Story2() }
-        } ) { }
-        public override void OnMachineEnter(string last_state_name) { }
-        public override void OnMachineExit(string next_state_name) { }
-        public override void OnMachineUpdate()
-        {
-            DrawStoryTextGUI( story_text );
-            DrawDogStatesViewer();
-            EditorGUILayout.BeginHorizontal();
-            var turn_back = DrawButton( "<" );
-            var turn_next = DrawButton( ">" );
-            EditorGUILayout.EndHorizontal();
-        }
-    }
-
-    public class Story1 : StatedStateMachine<Story1, AppleStory>
-    {
-        public string story_1_summary;
-        public string story_1_detail;
-        public Story1() : base( new()
-        {
-            { "Start", new Story1_1() },
-            { "End", new Story1_2() }
-        } ) { }
-        public override void OnMachineEnter(string last_state_name) { throw new NotImplementedException(); }
-        public override void OnMachineExit(string next_state_name) { throw new NotImplementedException(); }
-        public override void OnMachineUpdate()
-        {
-            m_stated_machine.story_text = $"\t{story_1_summary}\n\n\t{story_1_detail}";
-        }
-    }
-
-    public class Story1_1 : StateMachine<Story1>
-    {
-        public string story_1_1_detail;
-        public override void OnMachineEnter(string last_state_name) { }
-        public override void OnMachineExit(string next_state_name) { }
-        public override void OnMachineUpdate()
-        {
-            m_stated_machine.story_1_detail = story_1_1_detail;
-        }
-    }
-    public class Story1_2 : StateMachine<Story1>
-    {
-        public string story_1_2_detail;
-        public override void OnMachineEnter(string last_state_name) { }
-        public override void OnMachineExit(string next_state_name) { }
-        public override void OnMachineUpdate()
-        {
-            m_stated_machine.story_1_detail = story_1_2_detail;
-        }
-    }
-
-    public class Story2 : StateMachine<AppleStory>
-    {
-        public override void OnMachineEnter(string last_state_name) { }
-        public override void OnMachineExit(string next_state_name) { }
-        public override void OnMachineUpdate() { }
-    }
+    // public class AppleStory : StatedStateMachine<AppleStory, NoneMachine>
+    // {
+    //     public string story_text;
+    //     public event Action<string> DrawStoryTextGUI;
+    //     public event Func<string, bool> DrawButton;
+    //     public event Action DrawDogStatesViewer;
+    //     public event Action<int> GiveTheMountainApples;
+    //     public AppleStory() : base( new()
+    //     {
+    //         { "Chapter1", new Story1( "Chapter1" ) },
+    //         { "Chapter2", new Story2( "Chapter2" ) }
+    //     } ) { }
+    //     public override void OnMachineEnter(string last_state_name) { }
+    //     public override void OnMachineExit(string next_state_name) { }
+    //     public override void OnMachineUpdate()
+    //     {
+    //         DrawStoryTextGUI( story_text );
+    //         DrawDogStatesViewer();
+    //         EditorGUILayout.BeginHorizontal();
+    //         var turn_back = DrawButton( "<" );
+    //         var turn_next = DrawButton( ">" );
+    //         EditorGUILayout.EndHorizontal();
+    //     }
+    // }
+    //
+    // public class Story1 : StatedStateMachine<Story1, AppleStory>
+    // {
+    //     public string story_1_summary;
+    //     public string story_1_detail;
+    //     public Story1(string state_name) : base( new()
+    //     {
+    //         { "Start", new Story1_1( "Start" ) },
+    //         { "End", new Story1_2( "End" ) }
+    //     }, state_name ) { }
+    //     public override void OnMachineEnter(string last_state_name) { throw new NotImplementedException(); }
+    //     public override void OnMachineExit(string next_state_name) { throw new NotImplementedException(); }
+    //     public override void OnMachineUpdate()
+    //     {
+    //         m_stated_machine.story_text = $"\t{story_1_summary}\n\n\t{story_1_detail}";
+    //     }
+    // }
+    //
+    // public class Story1_1 : StateMachine<Story1>
+    // {
+    //     public string story_1_1_detail;
+    //     public override void OnMachineEnter(string last_state_name) { }
+    //     public override void OnMachineExit(string next_state_name) { }
+    //     public override void OnMachineUpdate()
+    //     {
+    //         m_stated_machine.story_1_detail = story_1_1_detail;
+    //     }
+    //     public Story1_1(string state_name) : base( state_name ) { }
+    // }
+    // public class Story1_2 : StateMachine<Story1>
+    // {
+    //     public string story_1_2_detail;
+    //     public override void OnMachineEnter(string last_state_name) { }
+    //     public override void OnMachineExit(string next_state_name) { }
+    //     public override void OnMachineUpdate()
+    //     {
+    //         m_stated_machine.story_1_detail = story_1_2_detail;
+    //     }
+    //     public Story1_2(string state_name) : base( state_name ) { }
+    // }
+    //
+    // public class Story2 : StateMachine<AppleStory>
+    // {
+    //     public override void OnMachineEnter(string last_state_name) { }
+    //     public override void OnMachineExit(string next_state_name) { }
+    //     public override void OnMachineUpdate() { }
+    //     public Story2(string state_name) : base( state_name ) { }
+    // }
 
 #endregion
 
