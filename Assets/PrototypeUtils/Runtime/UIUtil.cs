@@ -143,6 +143,11 @@ namespace PrototypeUtils
             s.paddingRight = padding;
         }
 
+        public static void ScaleIMGUI(Vector2 scale)
+        {
+            GUIUtility.ScaleAroundPivot( scale, (0f, 0f).V() );
+        }
+
     #endregion
 
     #region ScreenCoordinate3DUI

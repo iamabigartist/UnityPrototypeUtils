@@ -7,5 +7,9 @@ namespace PrototypeUtils
         {
             return stopwatch.ElapsedTicks / 10000.0;
         }
+        public static long MsToTicks(double ms)
+        {
+            return (long)(ms * 10000.0);
+        }
     }
 }
