@@ -70,6 +70,8 @@ namespace PrototypeUtils.StateMachine0
             }
         }
 
+        protected abstract void OnTranslateState(TCurrentMachineStateEnum to_state_name);
+
         public void TranslateState(TCurrentMachineStateEnum to_state_name)
         {
             m_states[current_state].ExitMachine( to_state_name );

@@ -290,7 +290,7 @@ namespace Examples.E5_StateController
             PublicChatMachine<TChatter>, PublicChatMachine<TChatter>.ChatMode,
             NoneMachine, NoneState
         >
-        where TChatter : IChatter
+        where TChatter : class, IChatter
     {
 
 
@@ -349,22 +349,41 @@ namespace Examples.E5_StateController
 
     #region MachineEnrty
 
-        public PublicChatMachine(float enroll_cool_down_ms, float chat_once_time_length_ms) : base(
-            new()
-            {
-                { ChatMode.Free, new FreeChatState<TChatter>( ChatMode.Free ) },
-                { ChatMode.Turn, new TurnChatState<TChatter>( ChatMode.Turn ) },
-                { ChatMode.Enroll, new EnrollChatState<TChatter>( ChatMode.Enroll ) }
-            }, ChatMode.None )
+        public PublicChatMachine(
+            float enroll_cool_down_ms,
+            float chat_once_time_length_ms,
+            string[] character_order_table,
+            Action<string> Log,
+            Action<(TChatter chatter, bool is_mute)> SetSingleChatterMute,
+            Action<(ChatMode prev_chatMode, ChatMode new_chatMode)> StateChangeNotification)
+            : base(
+                new()
+                {
+                    { ChatMode.Free, new FreeChatState<TChatter>( ChatMode.Free ) },
+                    { ChatMode.Turn, new TurnChatState<TChatter>( ChatMode.Turn ) },
+                    { ChatMode.Enroll, new EnrollChatState<TChatter>( ChatMode.Enroll ) }
+                }, ChatMode.None )
         {
             this.enroll_cool_down_ms = enroll_cool_down_ms;
             this.chat_once_time_length_ms = chat_once_time_length_ms;
             main_chatter_timer = new(this.chat_once_time_length_ms);
+
+            character_name_chat_order_table = character_order_table;
+            cur_chatters = new();
+
+            this.Log = Log;
+            this.SetSingleChatterMute = SetSingleChatterMute;
+            this.StateChangeNotification = StateChangeNotification;
+
         }
 
-        protected override void OnMachineEnter(NoneState last_state_name) { }
+        protected override void OnMachineEnter(NoneState last_state_name)
+        {
+            cur_main_chatter = null;
+        }
         protected override void OnMachineExit(NoneState next_state_name) { }
         protected override void OnMachineUpdate() { }
+        protected override void OnTranslateState(ChatMode to_state_name) { }
 
     #endregion
 
@@ -396,14 +415,14 @@ namespace Examples.E5_StateController
 
     public class FreeChatState<TChatter>
         : StateMachine<PublicChatMachine<TChatter>, PublicChatMachine<TChatter>.ChatMode>
-        where TChatter : IChatter
+        where TChatter : class, IChatter
     {
         public FreeChatState(PublicChatMachine<TChatter>.ChatMode state_name) : base( state_name ) { }
     }
 
     public class TurnChatState<TChatter>
         : StateMachine<PublicChatMachine<TChatter>, PublicChatMachine<TChatter>.ChatMode>
-        where TChatter : IChatter
+        where TChatter : class, IChatter
     {
         public int cur_table_index;
         public TurnChatState(PublicChatMachine<TChatter>.ChatMode state_name) : base( state_name ) { }
@@ -411,7 +430,7 @@ namespace Examples.E5_StateController
 
     public class EnrollChatState<TChatter>
         : StateMachine<PublicChatMachine<TChatter>, PublicChatMachine<TChatter>.ChatMode>
-        where TChatter : IChatter
+        where TChatter : class, IChatter
     {
         public Queue<TChatter> chat_queue;
         public EnrollChatState(PublicChatMachine<TChatter>.ChatMode state_name) : base( state_name ) { }

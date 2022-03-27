@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/PeriodTimer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/PeriodTimer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/New Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryCatchRef.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryCatchRef.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PubChatMono.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PubChatMono.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
