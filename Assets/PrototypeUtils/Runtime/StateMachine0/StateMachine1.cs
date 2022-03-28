@@ -74,6 +74,7 @@ namespace PrototypeUtils.StateMachine0
 
         public void TranslateState(TCurrentMachineStateEnum to_state_name)
         {
+            OnTranslateState( to_state_name );
             m_states[current_state].ExitMachine( to_state_name );
             m_states[to_state_name].EnterMachine( current_state );
             current_state = to_state_name;
@@ -81,20 +82,20 @@ namespace PrototypeUtils.StateMachine0
 
         public new void EnterMachine(TStatedMachineStateEnum last_state_name)
         {
-            m_states[current_state].EnterMachine( none_state_name );
             base.EnterMachine( last_state_name );
+            m_states[current_state].EnterMachine( none_state_name );
         }
 
         public new void ExitMachine(TStatedMachineStateEnum next_state_name)
         {
-            m_states[current_state].EnterMachine( none_state_name );
             base.ExitMachine( next_state_name );
+            m_states[current_state].EnterMachine( none_state_name );
         }
 
         public new void UpdateMachine()
         {
-            m_states[current_state].UpdateMachine();
             base.UpdateMachine();
+            m_states[current_state].UpdateMachine();
         }
 
     }

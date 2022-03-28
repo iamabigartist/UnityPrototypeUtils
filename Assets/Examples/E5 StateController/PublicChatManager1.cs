@@ -10,6 +10,7 @@ namespace Examples.E5_StateController
     {
         string user_name { get; }
         string character_name { get; }
+        PeriodTimer chat_cooldown_timer { get; }
     }
 
     public class PublicChatSystem<TChatter>
@@ -325,9 +326,11 @@ namespace Examples.E5_StateController
 
     #region MainChatter
 
-        TChatter cur_main_chatter;
+        public TChatter cur_main_chatter;
 
-        PeriodTimer main_chatter_timer;
+        public PeriodTimer main_chatter_timer;
+
+        public bool MainChatterTimeOut => main_chatter_timer.TimeUp();
 
     #endregion
 
@@ -339,9 +342,48 @@ namespace Examples.E5_StateController
 
         public string[] character_name_chat_order_table;
 
-        public Dictionary<string, TChatter> cur_chatters;
+        public List<TChatter> cur_chatters;
 
     #endregion
+
+    #endregion
+
+    #region Process
+
+        public void ResetChannel()
+        {
+            SetMuteAll( true );
+            cur_main_chatter = null;
+        }
+
+        public void RemoveMainChatter()
+        {
+            if (cur_main_chatter != null)
+            {
+                SetSingleChatterMute( (cur_main_chatter, true) );
+                cur_main_chatter = null;
+            }
+        }
+
+        public void ChangeMainChatter(TChatter chatter)
+        {
+            RemoveMainChatter();
+            cur_main_chatter = chatter;
+            main_chatter_timer.StartNewPeriod();
+            MainChatterChangeNotification( chatter );
+        }
+
+    #endregion
+
+    #region Util
+
+        public void SetMuteAll(bool is_mute)
+        {
+            foreach (var chatter in cur_chatters)
+            {
+                SetSingleChatterMute( (chatter, is_mute) );
+            }
+        }
 
     #endregion
 
@@ -380,29 +422,39 @@ namespace Examples.E5_StateController
         protected override void OnMachineEnter(NoneState last_state_name)
         {
             cur_main_chatter = null;
+            current_state = ChatMode.Free;
         }
         protected override void OnMachineExit(NoneState next_state_name) { }
         protected override void OnMachineUpdate() { }
-        protected override void OnTranslateState(ChatMode to_state_name) { }
+        protected override void OnTranslateState(ChatMode to_state_name)
+        {
+            ResetChannel();
+        }
 
     #endregion
 
     #region Behaviour
 
-        public delegate void UpdateStateCallback(ChatMode prev_chatMode, ChatMode new_chatMode);
-
     #region External
 
-        public event Action<string> Log;
-        public event Action<(TChatter chatter, bool is_mute)> SetSingleChatterMute;
-        public event Action<(ChatMode prev_chatMode, ChatMode new_chatMode)> StateChangeNotification;
+        public Action<string> Log;
+        public Action<(TChatter chatter, bool is_mute)> SetSingleChatterMute;
+        public Action<(ChatMode prev_chatMode, ChatMode new_chatMode)> StateChangeNotification;
+
+        public Action<TChatter> MainChatterChangeNotification;
+
+        public Action RoundEndNotification;
+        public Action<TChatter> ChatterEnQueueNotification;
+        public Action<TChatter> ChatterDequeueNotification;
 
     #endregion
 
     #region Internal
 
-        public Action<TChatter> QueueUpChatter;
-        public Action<TChatter> MainChatterAllowViceChatter;
+        public Func<TChatter, bool> ChatterEnterRoom;
+        public Func<TChatter, bool> ChatterExitRoom;
+        public Func<TChatter, bool> QueueUpChatter;
+        public Func<TChatter, bool> MainChatterAllowViceChatter;
         public Action MainChatterSkipChatTime;
 
     #endregion
@@ -418,14 +470,127 @@ namespace Examples.E5_StateController
         where TChatter : class, IChatter
     {
         public FreeChatState(PublicChatMachine<TChatter>.ChatMode state_name) : base( state_name ) { }
+        protected override void OnMachineEnter(PublicChatMachine<TChatter>.ChatMode last_state_name)
+        {
+            m_stated_machine.SetMuteAll( false );
+        }
     }
 
     public class TurnChatState<TChatter>
         : StateMachine<PublicChatMachine<TChatter>, PublicChatMachine<TChatter>.ChatMode>
         where TChatter : class, IChatter
     {
-        public int cur_table_index;
+        int cur_table_index;
+        bool rounding;
+        public bool auto_restart_turn;
         public TurnChatState(PublicChatMachine<TChatter>.ChatMode state_name) : base( state_name ) { }
+
+
+        bool TryGetChatterByIndexName(int index, out TChatter chatter)
+        {
+            var cur_name =
+                m_stated_machine.character_name_chat_order_table[index];
+            var cur_chatter = m_stated_machine.cur_chatters.Find( chatter => chatter.character_name == cur_name );
+
+            var find = cur_chatter != null;
+
+            chatter = cur_chatter;
+
+            return find;
+        }
+
+        bool GetIndexNearestChatter(int index, out int name_index, out TChatter next_chatter)
+        {
+            while (index < m_stated_machine.character_name_chat_order_table.Length)
+            {
+                index++;
+
+                if (TryGetChatterByIndexName( index, out var chatter ))
+                {
+                    name_index = index;
+                    next_chatter = chatter;
+
+                    return true;
+                }
+            }
+
+            name_index = cur_table_index;
+            next_chatter = null;
+
+            return false;
+        }
+
+        void SetNewTurnMainChatter(int index, TChatter chatter)
+        {
+            m_stated_machine.ChangeMainChatter( chatter );
+            cur_table_index = index;
+        }
+
+        bool NextTurn()
+        {
+            var round_end =
+                GetIndexNearestChatter( cur_table_index + 1, out var name_index, out var next_chatter );
+
+            if (!round_end)
+            {
+                SetNewTurnMainChatter( name_index, next_chatter );
+            }
+
+            return round_end;
+        }
+
+        void StartNewRound()
+        {
+            rounding = true;
+            cur_table_index = 0;
+
+            var ever_exist =
+                GetIndexNearestChatter( cur_table_index, out var name_index, out var first_chatter );
+
+            if (ever_exist)
+            {
+                SetNewTurnMainChatter( name_index, first_chatter );
+            }
+            else
+            {
+                RoundEnd();
+                //Do nothing.
+            }
+        }
+
+        void RoundEnd()
+        {
+            rounding = false;
+            m_stated_machine.RoundEndNotification();
+        }
+
+        protected override void OnMachineEnter(PublicChatMachine<TChatter>.ChatMode last_state_name)
+        {
+            StartNewRound();
+        }
+        protected override void OnMachineUpdate()
+        {
+            if (rounding)
+            {
+                if (m_stated_machine.MainChatterTimeOut)
+                {
+                    var round_end = NextTurn();
+
+                    if (round_end)
+                    {
+                        if (auto_restart_turn)
+                        {
+                            StartNewRound();
+                        }
+                        else
+                        {
+                            RoundEnd();
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
     public class EnrollChatState<TChatter>
@@ -433,6 +598,48 @@ namespace Examples.E5_StateController
         where TChatter : class, IChatter
     {
         public Queue<TChatter> chat_queue;
-        public EnrollChatState(PublicChatMachine<TChatter>.ChatMode state_name) : base( state_name ) { }
+        public List<TChatter> cur_vice_chatters;
+
+
+        public void AddViceChatters(TChatter chatter)
+        {
+            m_stated_machine.SetSingleChatterMute( (chatter, false) );
+            cur_vice_chatters.Add( chatter );
+        }
+
+        public void ClearViceChatters()
+        {
+            foreach (var vice_chatter in cur_vice_chatters)
+            {
+                m_stated_machine.SetSingleChatterMute( (vice_chatter, true) );
+            }
+
+            cur_vice_chatters.Clear();
+        }
+
+        public bool OnMainChatterAllowViceChatter(TChatter chatter)
+        {
+            var success = chat_queue.Contains( chatter );
+
+            if (success) { AddViceChatters( chatter ); }
+
+            return success;
+        }
+
+        public EnrollChatState(PublicChatMachine<TChatter>.ChatMode state_name) : base( state_name )
+        {
+            chat_queue = new();
+            cur_vice_chatters = new();
+        }
+
+        protected override void OnMachineEnter(PublicChatMachine<TChatter>.ChatMode last_state_name)
+        {
+            m_stated_machine.MainChatterAllowViceChatter += OnMainChatterAllowViceChatter;
+        }
+
+        protected override void OnMachineExit(PublicChatMachine<TChatter>.ChatMode next_state_name)
+        {
+            m_stated_machine.MainChatterAllowViceChatter -= OnMainChatterAllowViceChatter;
+        }
     }
 }

@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +121,7 @@
       <workItem from="1648123794649" duration="6190000" />
       <workItem from="1648177148221" duration="3553000" />
       <workItem from="1648180828362" duration="653000" />
+      <workItem from="1648468850195" duration="6684000" />
     </task>
     <servers />
   </component>
