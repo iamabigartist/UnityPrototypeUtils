@@ -482,7 +482,7 @@ namespace Examples.E5_StateController
     {
         int cur_table_index;
         bool rounding;
-        public bool auto_restart_turn;
+        public bool auto_restart_round;
         public TurnChatState(PublicChatMachine<TChatter>.ChatMode state_name) : base( state_name ) { }
 
 
@@ -490,7 +490,7 @@ namespace Examples.E5_StateController
         {
             var cur_name =
                 m_stated_machine.character_name_chat_order_table[index];
-            var cur_chatter = m_stated_machine.cur_chatters.Find( chatter => chatter.character_name == cur_name );
+            var cur_chatter = m_stated_machine.cur_chatters.Find( cur_chatter => cur_chatter.character_name == cur_name );
 
             var find = cur_chatter != null;
 
@@ -501,10 +501,8 @@ namespace Examples.E5_StateController
 
         bool GetIndexNearestChatter(int index, out int name_index, out TChatter next_chatter)
         {
-            while (index < m_stated_machine.character_name_chat_order_table.Length)
+            for (; index < m_stated_machine.character_name_chat_order_table.Length; index++)
             {
-                index++;
-
                 if (TryGetChatterByIndexName( index, out var chatter ))
                 {
                     name_index = index;
@@ -568,6 +566,10 @@ namespace Examples.E5_StateController
         {
             StartNewRound();
         }
+        protected override void OnMachineExit(PublicChatMachine<TChatter>.ChatMode next_state_name)
+        {
+            RoundEnd();
+        }
         protected override void OnMachineUpdate()
         {
             if (rounding)
@@ -578,7 +580,7 @@ namespace Examples.E5_StateController
 
                     if (round_end)
                     {
-                        if (auto_restart_turn)
+                        if (auto_restart_round)
                         {
                             StartNewRound();
                         }

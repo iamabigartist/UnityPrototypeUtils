@@ -84,7 +84,7 @@ namespace Examples.E0_MessLab
             {
                 m_action_Delegate = Delegate.Combine( m_action_Delegate, m_handler_Delegate );
                 m_action_Delegate = Delegate.Remove( m_action_Delegate, m_handler_Delegate );
-            }, DebugUtils.MsToTicks( 50.0 ));
+            }, TimeUtil.MsToTicks( 50.0 ));
         }
 
         public void Update()

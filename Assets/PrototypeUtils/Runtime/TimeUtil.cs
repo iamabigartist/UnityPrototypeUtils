@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 namespace PrototypeUtils
 {
-    public static class DebugUtils
+    public static class TimeUtil
     {
         public static double Get_ms(this Stopwatch stopwatch)
         {

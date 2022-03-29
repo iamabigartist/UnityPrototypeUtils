@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryDelegateDict.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryDelegateDict.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/PeriodTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/PeriodTimer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/DebugUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/DebugUtils.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +126,7 @@
       <workItem from="1648177148221" duration="3553000" />
       <workItem from="1648180828362" duration="653000" />
       <workItem from="1648468850195" duration="6684000" />
+      <workItem from="1648519662565" duration="5646000" />
     </task>
     <servers />
   </component>
