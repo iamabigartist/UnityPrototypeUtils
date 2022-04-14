@@ -5,13 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/DynamicDictCheck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/DynamicDictCheck.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/QuerySample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/QuerySample.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/MessageSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/MessageSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/MiGuHybridUtil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/MiGuHybridUtil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/PublicChatManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/PublicChatManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxClientGlobalStateViewer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxClientGlobalStateViewer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxServiceManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxServiceManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxUtil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxUtil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/ECSUtil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/ECSUtil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/RpcSessionProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/RpcSessionProcessor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/ValueSyncer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/ValueSyncer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryDelegateDict.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryDelegateDict.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/PeriodTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/PeriodTimer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/DebugUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/DebugUtils.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,12 +51,15 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/e7/dc06730a/Delegate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/d4/5b328fa3/Action.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxClientGlobalStateViewer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/e8/18bf93f2/MulticastDelegate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/e7/dc06730a/Delegate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/ValueSyncer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/b5/1a9efeec/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/30/5dd94629/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/e8/18bf93f2/MulticastDelegate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/4f/013d0751/IEnumerator`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -65,7 +88,8 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="rider.run.widget.enabled.cache" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -126,7 +150,8 @@
       <workItem from="1648177148221" duration="3553000" />
       <workItem from="1648180828362" duration="653000" />
       <workItem from="1648468850195" duration="6684000" />
-      <workItem from="1648519662565" duration="5646000" />
+      <workItem from="1648519662565" duration="6181000" />
+      <workItem from="1649926982329" duration="2148000" />
     </task>
     <servers />
   </component>

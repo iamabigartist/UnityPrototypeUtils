@@ -330,7 +330,7 @@ namespace Examples.E5_StateController
 
         public PeriodTimer main_chatter_timer;
 
-        public bool MainChatterTimeOut => main_chatter_timer.TimeUp();
+        public bool MainChatterTimeOut => main_chatter_timer.IsTimeUp();
 
     #endregion
 

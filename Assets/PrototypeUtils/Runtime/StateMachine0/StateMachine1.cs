@@ -14,6 +14,7 @@ namespace PrototypeUtils.StateMachine0
         where TStatedMachine : Machine
         where TStatedMachineStateEnum : Enum
     {
+        public bool running { get; private set; }
         public readonly TStatedMachineStateEnum state_name;
         public TStatedMachine m_stated_machine;
         protected StateMachine(TStatedMachineStateEnum state_name) { this.state_name = state_name; }
@@ -21,9 +22,22 @@ namespace PrototypeUtils.StateMachine0
         protected virtual void OnMachineExit(TStatedMachineStateEnum next_state_name) { }
         protected virtual void OnMachineUpdate() { }
 
-        public void EnterMachine(TStatedMachineStateEnum last_state_name) { OnMachineEnter( last_state_name ); }
-        public void ExitMachine(TStatedMachineStateEnum next_state_name) { OnMachineExit( next_state_name ); }
-        public void UpdateMachine() { OnMachineUpdate(); }
+        public void EnterMachine(TStatedMachineStateEnum last_state_name)
+        {
+            OnMachineEnter( last_state_name );
+            running = true;
+        }
+        public void ExitMachine(TStatedMachineStateEnum next_state_name)
+        {
+            OnMachineExit( next_state_name );
+            running = false;
+        }
+        public void UpdateMachine()
+        {
+            if (!running) { return; }
+
+            OnMachineUpdate();
+        }
     }
 
     /// <summary>
@@ -89,7 +103,7 @@ namespace PrototypeUtils.StateMachine0
         public new void ExitMachine(TStatedMachineStateEnum next_state_name)
         {
             base.ExitMachine( next_state_name );
-            m_states[current_state].EnterMachine( none_state_name );
+            m_states[current_state].ExitMachine( none_state_name );
         }
 
         public new void UpdateMachine()
