@@ -10,12 +10,12 @@ namespace PrototypeUtils
     ///         <para>Update means from module to UI</para>
     ///     </remarks>
     /// </summary>
-    public class UIManager
+    public class UIElementManager
     {
         event Action OnUpdate;
         public VisualElement root;
 
-        public UIManager(VisualElement root)
+        public UIElementManager(VisualElement root)
         {
             this.root = root;
         }
