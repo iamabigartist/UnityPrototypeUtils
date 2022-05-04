@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/New Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E1 EditorCameraController/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E1 EditorCameraController/New Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UIElementManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UIManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UIElementManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UIUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UIUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +130,7 @@
       <workItem from="1648468850195" duration="6684000" />
       <workItem from="1648519662565" duration="6181000" />
       <workItem from="1649926982329" duration="2148000" />
-      <workItem from="1651657923264" duration="2295000" />
+      <workItem from="1651657923264" duration="2780000" />
     </task>
     <servers />
   </component>
