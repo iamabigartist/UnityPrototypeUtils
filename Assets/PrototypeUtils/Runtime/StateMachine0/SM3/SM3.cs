@@ -26,19 +26,17 @@ namespace PrototypeUtils.StateMachine0.SM3
 		where TInterfaceEnum : Enum
 		where TStateEnum : Enum
 	{
-		protected TThisMachine data;
 		readonly Dictionary<TStateEnum, MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum>> drivers;
 		readonly Dictionary<TInterfaceEnum, Action<object>> base_interfaces;
 		public TStateEnum cur_state { get; private set; }
 		MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum> cur_driver;
-		protected StateMachine(TThisMachine data, Dictionary<TInterfaceEnum, Action<object>> base_interfaces, Dictionary<TStateEnum, MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum>> drivers, TStateEnum start_state)
+		protected StateMachine(Dictionary<TInterfaceEnum, Action<object>> base_interfaces, Dictionary<TStateEnum, MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum>> drivers, TStateEnum start_state)
 		{
-			this.data = data;
 			this.base_interfaces = base_interfaces;
 			this.drivers = drivers;
 			cur_state = start_state;
 			cur_driver = drivers[cur_state];
-			foreach (var driver in drivers.Values) { driver.machine_data = data; }
+			foreach (var driver in drivers.Values) { driver.machine_data = this as TThisMachine; }
 		}
 		protected abstract void OnStateTransition(TStateEnum new_state);
 

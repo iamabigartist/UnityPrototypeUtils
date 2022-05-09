@@ -19,7 +19,7 @@ namespace Examples.E6_TestSM3
 			Activated,
 			Cooling
 		}
-		public BonePlating(double activated_duration_ms, double cooldown_ms) : base(new(),
+		public BonePlating(double activated_duration_ms, double cooldown_ms) : base(
 			new()
 			{
 				{ DamageModifier.OnReceivedDamage, _ => {} }
@@ -31,9 +31,9 @@ namespace Examples.E6_TestSM3
 				{ State.Cooling, new Cooling() }
 			}, State.Cooled)
 		{
-			data.activated_duration_timer = new(activated_duration_ms);
-			data.cooldown_timer = new(cooldown_ms);
-			data.cur_plate_count = max_plating_count;
+			activated_duration_timer = new(activated_duration_ms);
+			cooldown_timer = new(cooldown_ms);
+			cur_plate_count = max_plating_count;
 		}
 		protected override void OnStateTransition(State new_state) {}
 		public override void OnMachineUpdate()
@@ -45,14 +45,17 @@ namespace Examples.E6_TestSM3
 
 		public double ActivatedDurationMs
 		{
-			get => data.activated_duration_timer.period_ms;
-			set => data.activated_duration_timer.period_ms = value;
+			get => activated_duration_timer.period_ms;
+			set => activated_duration_timer.period_ms = value;
 		}
+
 		public double CooldownMs
 		{
-			get => data.cooldown_timer.period_ms;
-			set => data.cooldown_timer.period_ms = value;
+			get => cooldown_timer.period_ms;
+			set => cooldown_timer.period_ms = value;
 		}
+
+		public int CurPlateCount => cur_plate_count;
 
 	#endregion
 

@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/SM3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/SM3/SM3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/SM3/SM3.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine2/FSMInterface.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/StateMachine2/FSMInterface.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/SM3/SM3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/SM3/SM3.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +133,7 @@
       <workItem from="1648519662565" duration="6181000" />
       <workItem from="1649926982329" duration="2148000" />
       <workItem from="1651657923264" duration="5795000" />
-      <workItem from="1652105165769" duration="6704000" />
+      <workItem from="1652105165769" duration="7523000" />
     </task>
     <servers />
   </component>
