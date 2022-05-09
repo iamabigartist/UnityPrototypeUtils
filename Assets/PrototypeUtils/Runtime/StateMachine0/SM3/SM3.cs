@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 namespace PrototypeUtils.StateMachine0.SM3
 {
-	public abstract class MachineDriver<TMachineModel, TInterfaceEnum, TStateEnum>
-		where TMachineModel : class
+	public abstract class MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum>
+		where TThisMachine : StateMachine<TThisMachine, TInterfaceEnum, TStateEnum>
 		where TInterfaceEnum : Enum
+		where TStateEnum : Enum
 	{
-		public TMachineModel machine_data;
+		public TThisMachine machine_data;
 		public readonly Dictionary<TInterfaceEnum, Action<object>> interfaces;
 		protected MachineDriver(Dictionary<TInterfaceEnum, Action<object>> interfaces)
 		{
@@ -20,17 +21,17 @@ namespace PrototypeUtils.StateMachine0.SM3
 
 	}
 
-	public abstract class StateMachine<TMachineData, TInterfaceEnum, TStateEnum>
-		where TMachineData : class
+	public abstract class StateMachine<TThisMachine, TInterfaceEnum, TStateEnum>
+		where TThisMachine : StateMachine<TThisMachine, TInterfaceEnum, TStateEnum>
 		where TInterfaceEnum : Enum
 		where TStateEnum : Enum
 	{
-		protected TMachineData data;
-		readonly Dictionary<TStateEnum, MachineDriver<TMachineData, TInterfaceEnum, TStateEnum>> drivers;
+		protected TThisMachine data;
+		readonly Dictionary<TStateEnum, MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum>> drivers;
 		readonly Dictionary<TInterfaceEnum, Action<object>> base_interfaces;
 		public TStateEnum cur_state { get; private set; }
-		MachineDriver<TMachineData, TInterfaceEnum, TStateEnum> cur_driver;
-		protected StateMachine(TMachineData data, Dictionary<TInterfaceEnum, Action<object>> base_interfaces, Dictionary<TStateEnum, MachineDriver<TMachineData, TInterfaceEnum, TStateEnum>> drivers, TStateEnum start_state)
+		MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum> cur_driver;
+		protected StateMachine(TThisMachine data, Dictionary<TInterfaceEnum, Action<object>> base_interfaces, Dictionary<TStateEnum, MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum>> drivers, TStateEnum start_state)
 		{
 			this.data = data;
 			this.base_interfaces = base_interfaces;

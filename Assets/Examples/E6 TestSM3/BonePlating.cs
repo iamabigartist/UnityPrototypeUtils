@@ -3,15 +3,12 @@ using PrototypeUtils.StateMachine0.SM3;
 namespace Examples.E6_TestSM3
 {
 	public class BonePlating :
-		StateMachine<BonePlating.Data, BonePlating.DamageModifier, BonePlating.State>
+		StateMachine<BonePlating, BonePlating.DamageModifier, BonePlating.State>
 	{
 		public int max_plating_count = 3;
-		public class Data
-		{
-			public PeriodTimer activated_duration_timer;
-			public PeriodTimer cooldown_timer;
-			public int cur_plate_count;
-		}
+		public PeriodTimer activated_duration_timer;
+		public PeriodTimer cooldown_timer;
+		public int cur_plate_count;
 		public enum DamageModifier
 		{
 			OnReceivedDamage
@@ -62,7 +59,7 @@ namespace Examples.E6_TestSM3
 
 	#region StateDrivers
 
-		public class Cooled : MachineDriver<Data, DamageModifier, State>
+		public class Cooled : MachineDriver<BonePlating, DamageModifier, State>
 		{
 			public Cooled() : base(new()
 			{
@@ -81,7 +78,7 @@ namespace Examples.E6_TestSM3
 
 			}
 		}
-		public class Activated : MachineDriver<Data, DamageModifier, State>
+		public class Activated : MachineDriver<BonePlating, DamageModifier, State>
 		{
 			public Activated() : base(new()
 			{
@@ -91,7 +88,7 @@ namespace Examples.E6_TestSM3
 			}
 			public override bool NextState(out State next_state) {}
 		}
-		public class Cooling : MachineDriver<Data, DamageModifier, State>
+		public class Cooling : MachineDriver<BonePlating, DamageModifier, State>
 		{
 			public Cooling() : base(new()
 			{
