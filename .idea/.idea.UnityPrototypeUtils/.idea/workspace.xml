@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/SM3/SM3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/StateMachine0/SM3/SM3.cs" afterDir="false" />
-    </list>
+    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,15 +22,6 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/30/5dd94629/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/4f/013d0751/IEnumerator`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/b5/1a9efeec/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/d4/5b328fa3/Action.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/e7/dc06730a/Delegate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bc1d04d811fc4873ab7d8d9d4daddcc9568788/e8/18bf93f2/MulticastDelegate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/beb85b01e9f44ee78d7f7bc28bfa2f13152600/06/e2f1f066/DisplayStyle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/beb85b01e9f44ee78d7f7bc28bfa2f13152600/5b/62b68ca4/Visibility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/beb85b01e9f44ee78d7f7bc28bfa2f13152600/c2/862f4843/StyleEnum`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxClientGlobalStateViewer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxUtil.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,18 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.1.11f1\Editor\Unity.exe" />
@@ -134,6 +123,7 @@
       <workItem from="1649926982329" duration="2148000" />
       <workItem from="1651657923264" duration="5795000" />
       <workItem from="1652105165769" duration="11080000" />
+      <workItem from="1660315718760" duration="267000" />
     </task>
     <servers />
   </component>
