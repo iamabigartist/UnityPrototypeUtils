@@ -24,7 +24,34 @@ namespace PrototypeUtils
 
 	#region Layout
 
-		public static Rect GetPart(
+		public static Rect DownPart(this Rect rect, float up_height)
+		{
+			var result = rect;
+			result.y += up_height;
+			result.height -= up_height;
+			return result;
+		}
+		public static Rect UpPart(this Rect rect, float up_height)
+		{
+			var result = rect;
+			result.height = up_height;
+			return result;
+		}
+		public static Rect RightPart(this Rect rect, float left_width)
+		{
+			var result = rect;
+			result.x += left_width;
+			result.width -= left_width;
+			return result;
+		}
+		public static Rect LeftPart(this Rect rect, float left_width)
+		{
+			var result = rect;
+			result.width = left_width;
+			return result;
+		}
+		
+		public static Rect GetGridPart(
 			this Rect rect,
 			int x_grid_count,
 			int y_grid_count,
@@ -61,7 +88,7 @@ namespace PrototypeUtils
 				{
 					for (int x = 0; x < x_grid_count; x++)
 					{
-						element_drawer(position.GetPart(x_grid_count, y_grid_count, x, y), i);
+						element_drawer(position.GetGridPart(x_grid_count, y_grid_count, x, y), i);
 						i++;
 					}
 				}
@@ -72,7 +99,7 @@ namespace PrototypeUtils
 				{
 					for (int y = 0; y < y_grid_count; y++)
 					{
-						element_drawer(position.GetPart(x_grid_count, y_grid_count, x, y), i);
+						element_drawer(position.GetGridPart(x_grid_count, y_grid_count, x, y), i);
 						i++;
 					}
 				}

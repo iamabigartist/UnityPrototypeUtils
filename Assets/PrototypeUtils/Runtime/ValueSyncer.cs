@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-namespace VivoxPlayground.MyVivoxFramework.Util
+namespace PrototypeUtils
 {
     public class ValueSyncer<T>
     {

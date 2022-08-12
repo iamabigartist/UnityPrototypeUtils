@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-namespace VivoxPlayground.Lab5_QueryEntityInMono
+namespace Examples.E0_MessLab
 {
     public class DynamicDictCheck : MonoBehaviour
     {
