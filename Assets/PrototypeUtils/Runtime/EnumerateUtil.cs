@@ -15,7 +15,7 @@ namespace PrototypeUtils
             return new_array;
         }
 
-        public static string ToMString<T>(this IEnumerable<T> array, string separator)
+        public static string JoinString<T>(this IEnumerable<T> array, string separator)
         {
             return string.Join( separator, array );
         }

@@ -6,7 +6,7 @@ namespace Examples.E0_MessLab
     {
         void Start()
         {
-            Debug.Log( transform.GetHierarchyPath().ToMString( "/" ) );
+            Debug.Log( transform.GetHierarchyPath().JoinString( "/" ) );
         }
     }
 }
