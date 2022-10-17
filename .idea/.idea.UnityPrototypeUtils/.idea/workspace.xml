@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="" />
+    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Counter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Counter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryDelegateDict.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryDelegateDict.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/PeriodTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/PeriodTimer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/PeriodTimer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TaskWatcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/TaskWatcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TaskWatcher.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/TaskWatcher.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Util.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Util.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UnityEditorCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/UnityEditorCameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +39,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxClientGlobalStateViewer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/ValueSyncer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,6 +141,7 @@
       <workItem from="1651657923264" duration="5795000" />
       <workItem from="1652105165769" duration="11080000" />
       <workItem from="1660315718760" duration="267000" />
+      <workItem from="1666021157060" duration="2822000" />
     </task>
     <servers />
   </component>

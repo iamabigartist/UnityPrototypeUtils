@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using PrototypeUtils;
+using PrototypeUtils.TimeUtil;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 namespace Examples.E0_MessLab
@@ -84,7 +85,7 @@ namespace Examples.E0_MessLab
             {
                 m_action_Delegate = Delegate.Combine( m_action_Delegate, m_handler_Delegate );
                 m_action_Delegate = Delegate.Remove( m_action_Delegate, m_handler_Delegate );
-            }, TimeUtil.MsToTicks( 50.0 ));
+            }, Util.MsToTicks( 50.0 ));
         }
 
         public void Update()

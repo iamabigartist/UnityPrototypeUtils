@@ -138,7 +138,7 @@ namespace PrototypeUtils
             }
 
             //Target position move change
-            target_t.Translate( Time.deltaTime * new Vector3( user_input.move.x, 0, user_input.move.y ), target_t );
+            target_t.Translate( Time .deltaTime * new Vector3( user_input.move.x, 0, user_input.move.y ), target_t );
             target_t.Translate( Time.deltaTime * new Vector3( -user_input.drag.x, -user_input.drag.y, 0 ), target_t );
 
             //Target rotation and state rotation angle change

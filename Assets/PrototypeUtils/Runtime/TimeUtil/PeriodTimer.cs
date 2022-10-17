@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-namespace PrototypeUtils
+namespace PrototypeUtils.TimeUtil
 {
 
     public class PeriodTimer
