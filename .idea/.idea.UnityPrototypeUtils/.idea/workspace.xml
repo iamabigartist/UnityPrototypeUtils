@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/CheckIntervalTimer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/CheckIntervalTimer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/FixedIntervalTimer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/FixedIntervalTimer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Timer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Timer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Counter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Counter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Util.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/TimeUtil/Util.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/CheckIntervalTimer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/CheckIntervalTimer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/Chua.TimeUtils.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/Chua.TimeUtils.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/Counter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/Counter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/FixedIntervalTimer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/FixedIntervalTimer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/PeriodTimer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/PeriodTimer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/TaskWatcher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/TaskWatcher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/Timer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/Timer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/Util.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/Scripts/Util.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtil/package.json.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +45,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestCounter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxClientGlobalStateViewer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/Archive/VivoxUtil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PrototypeUtils/Runtime/ValueSyncer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -143,6 +150,7 @@
       <workItem from="1669009203560" duration="831000" />
       <workItem from="1669340026024" duration="528000" />
       <workItem from="1669340671005" duration="2821000" />
+      <workItem from="1669344094981" duration="379000" />
     </task>
     <servers />
   </component>
