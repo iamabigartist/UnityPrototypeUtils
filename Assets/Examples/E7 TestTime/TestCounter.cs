@@ -1,5 +1,5 @@
 using UnityEngine;
-using static PrototypeUtils.TimeUtil.CounterUtil<float>;
+using static PrototypePackages.TimeUtil.Scripts.CounterUtil<float>;
 namespace Examples.E7_TestTime
 {
 	public class TestCounter : MonoBehaviour

@@ -2,9 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Timers;
-using PrototypeUtils;
-using PrototypeUtils.StateMachine0;
-using PrototypeUtils.TimeUtil;
+using PrototypePackages.PrototypeUtils.Runtime.StateMachine0;
+using PrototypePackages.TimeUtil.Scripts;
 namespace Examples.E5_StateController
 {
     public interface IChatter

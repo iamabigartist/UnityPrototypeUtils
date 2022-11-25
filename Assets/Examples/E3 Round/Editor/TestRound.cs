@@ -1,5 +1,5 @@
 ﻿using System;
-using PrototypeUtils;
+using PrototypePackages.PrototypeUtils.Runtime;
 using UnityEditor;
 using UnityEngine;
 namespace Examples.E3_Round.Editor

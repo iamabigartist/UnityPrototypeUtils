@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using PrototypeUtils;
-using PrototypeUtils.TimeUtil;
+using PrototypePackages.PrototypeUtils.Runtime;
+using PrototypePackages.TimeUtil.Scripts;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 namespace Examples.E0_MessLab

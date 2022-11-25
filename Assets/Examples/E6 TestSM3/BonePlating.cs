@@ -1,6 +1,5 @@
-﻿using PrototypeUtils;
-using PrototypeUtils.StateMachine0.SM3;
-using PrototypeUtils.TimeUtil;
+﻿using PrototypePackages.PrototypeUtils.Runtime.StateMachine0.SM3;
+using PrototypePackages.TimeUtil.Scripts;
 namespace Examples.E6_TestSM3
 {
 	public class Damage

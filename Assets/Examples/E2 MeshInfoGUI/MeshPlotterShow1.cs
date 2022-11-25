@@ -1,4 +1,4 @@
-using PrototypeUtils;
+using PrototypePackages.PrototypeUtils.Runtime;
 using UnityEngine;
 namespace Examples.E2_MeshInfoGUI
 {
