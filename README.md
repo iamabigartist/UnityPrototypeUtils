@@ -10,7 +10,7 @@ main branch is Recommanded, add #main to link like "https://github.com/iamabigar
 
 dev branch is rapidly changing, add #dev to link like "https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils#dev".
 
-##List
+## List
 
 ### MiscUtils
 
@@ -18,7 +18,7 @@ dev branch is rapidly changing, add #dev to link like "https://github.com/iamabi
 https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils
 ```
 
-###TimeUtils
+### TimeUtils
 
 ```markdown
 https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/TimeUtils
