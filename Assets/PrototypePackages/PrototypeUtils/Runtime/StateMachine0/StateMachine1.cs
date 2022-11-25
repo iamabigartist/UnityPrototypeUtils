@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace PrototypePackages.PrototypeUtils.Runtime.StateMachine0
+namespace PrototypePackages.PrototypeUtils.StateMachine0
 {
     public abstract class Machine { }
     public abstract class NoneMachine : Machine { }

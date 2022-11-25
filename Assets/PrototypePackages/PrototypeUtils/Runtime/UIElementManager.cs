@@ -1,7 +1,7 @@
 using System;
 using UnityEngine.UIElements;
-using static PrototypePackages.PrototypeUtils.Runtime.UIUtils;
-namespace PrototypePackages.PrototypeUtils.Runtime
+using static PrototypePackages.PrototypeUtils.UIUtils;
+namespace PrototypePackages.PrototypeUtils
 {
     /// <summary>
     ///     <para>Provide the <see cref="VisualElement" /> management and ease syntax</para>

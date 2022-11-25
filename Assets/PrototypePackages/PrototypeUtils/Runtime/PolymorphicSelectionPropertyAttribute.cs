@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using static UnityEditor.EditorGUIUtility;
-namespace PrototypePackages.PrototypeUtils.Runtime
+namespace PrototypePackages.PrototypeUtils
 {
 	public interface IInstanceGenerator
 	{

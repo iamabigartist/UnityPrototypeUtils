@@ -1,4 +1,4 @@
-﻿using PrototypePackages.PrototypeUtils.Runtime;
+﻿using PrototypePackages.PrototypeUtils;
 using UnityEngine;
 namespace Examples.E0_MessLab
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Unity.Mathematics;
 using UnityEngine;
-namespace PrototypePackages.PrototypeUtils.Runtime
+namespace PrototypePackages.PrototypeUtils
 {
     public static class VectorUtil
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace PrototypePackages.PrototypeUtils.Runtime.StateMachine0.SM3
+namespace PrototypePackages.PrototypeUtils.StateMachine0.SM3
 {
 	public abstract class MachineDriver<TThisMachine, TInterfaceEnum, TStateEnum>
 		where TThisMachine : StateMachine<TThisMachine, TInterfaceEnum, TStateEnum>

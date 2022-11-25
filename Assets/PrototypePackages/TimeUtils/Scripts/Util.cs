@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-namespace PrototypePackages.TimeUtil.Scripts
+namespace PrototypePackages.TimeUtils
 {
 	public static class Util
 	{

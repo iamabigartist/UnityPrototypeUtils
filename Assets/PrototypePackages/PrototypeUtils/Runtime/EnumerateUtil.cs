@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-namespace PrototypePackages.PrototypeUtils.Runtime
+namespace PrototypePackages.PrototypeUtils
 {
     public static class EnumerateUtil
     {

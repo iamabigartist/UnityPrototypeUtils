@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-namespace PrototypePackages.PrototypeUtils.Runtime
+namespace PrototypePackages.PrototypeUtils
 {
     public static class MiscUtil
     {

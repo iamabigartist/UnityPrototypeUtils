@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PrototypePackages.TimeUtil.Scripts
+namespace PrototypePackages.TimeUtils
 {
 	public class FixedIntervalTimer<TTime> where TTime : IComparable<TTime>
 	{

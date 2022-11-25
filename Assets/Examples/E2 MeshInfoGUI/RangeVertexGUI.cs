@@ -1,7 +1,7 @@
 using System;
-using PrototypePackages.PrototypeUtils.Runtime;
+using PrototypePackages.PrototypeUtils;
 using UnityEngine;
-using static PrototypePackages.PrototypeUtils.Runtime.MeshUtil;
+using static PrototypePackages.PrototypeUtils.MeshUtil;
 namespace Examples.E2_MeshInfoGUI
 {
     public class RangeVertexGUI : MonoBehaviour

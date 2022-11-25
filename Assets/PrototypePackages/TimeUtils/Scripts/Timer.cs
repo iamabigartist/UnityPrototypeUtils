@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PrototypePackages.TimeUtil.Scripts
+namespace PrototypePackages.TimeUtils
 {
 	//2022/11/21 决定，还是把对象式的计时器写回来，下次记得写完先存下git。具体计时器就继承原本计时器这样了。另外源自counter的初始化方法，最好也加上，相当于给定一部分参数假设，变化另外一部分，缩小了函数范围。
 	public class Timer<TTime> where TTime : IComparable<TTime>

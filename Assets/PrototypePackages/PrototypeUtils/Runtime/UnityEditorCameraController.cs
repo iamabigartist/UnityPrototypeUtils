@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-namespace PrototypePackages.PrototypeUtils.Runtime
+namespace PrototypePackages.PrototypeUtils
 {
     public class UnityEditorCameraController : MonoBehaviour
     {

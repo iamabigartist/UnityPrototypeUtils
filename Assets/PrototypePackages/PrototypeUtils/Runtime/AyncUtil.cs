@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
-namespace PrototypePackages.PrototypeUtils.Runtime
+namespace PrototypePackages.PrototypeUtils
 {
     public static class AsyncUtil
     {

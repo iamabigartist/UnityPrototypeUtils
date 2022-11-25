@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using PrototypePackages.PrototypeUtils.Runtime;
 using UnityEditor;
 using UnityEngine;
-namespace PrototypePackages.PrototypeUtils.Editor
+namespace PrototypePackages.PrototypeUtils
 {
     [Serializable]
     public class MeshSerializer : EditorWindow

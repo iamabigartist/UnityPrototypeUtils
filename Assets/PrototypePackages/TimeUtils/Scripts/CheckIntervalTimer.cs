@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PrototypePackages.TimeUtil.Scripts
+namespace PrototypePackages.TimeUtils
 {
 	public class CheckIntervalTimer<TTime> where TTime : IComparable<TTime>
 	{

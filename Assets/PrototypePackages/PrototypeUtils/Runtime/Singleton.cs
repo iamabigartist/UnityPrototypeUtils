@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
-using static PrototypePackages.PrototypeUtils.Runtime.AsyncUtil;
-namespace PrototypePackages.PrototypeUtils.Runtime
+using static PrototypePackages.PrototypeUtils.AsyncUtil;
+namespace PrototypePackages.PrototypeUtils
 {
     /// <summary>
     ///     A static singleton constructor and accessor
