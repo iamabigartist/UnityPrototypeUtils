@@ -8,6 +8,7 @@ namespace PrototypeUtils.TimeUtil
 
 		public static CountFor CreateCounterKind(Func<TCount> GetCurrentCount)
 		{
+			Timer<float> a;
 			return (Interval, Callbacks) =>
 			{
 				var counter = new Counter()
