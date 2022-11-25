@@ -4,19 +4,23 @@ All kinds of Utils Collection for fast Unity prototype making. Currently self-us
 
 ## Installation
 
-### Use Unity Package Manager
+Use Unity Package Manager links below.
 
-#### main branch(Recommanded)
+main branch is Recommanded, add #main to link like "https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils#main".
+
+dev branch is rapidly changing, add #dev to link like "https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils#dev".
+
+## List
+
+### MiscUtils
 
 ```markdown
-https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypeUtils#main
+https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils
 ```
 
-#### dev branch(Rapidly changing)
+### TimeUtils
 
 ```markdown
-https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypeUtils#dev
+https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/TimeUtils
 ```
-
-
 
