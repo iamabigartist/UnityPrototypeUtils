@@ -15,12 +15,12 @@ dev branch is rapidly changing, add #dev to link like "https://github.com/iamabi
 ### MiscUtils
 
 ```markdown
-https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils
+https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils#dev
 ```
 
 ### TimeUtils
 
 ```markdown
-https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/TimeUtils
+https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/TimeUtils#dev
 ```
 
