@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="" />
+    <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestTimer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestTimer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/IDoFor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/IDoFor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E7 TestTime/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E7 TestTime/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/FixedIntervalTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/FixedIntervalTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +62,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\2022.1.11f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\2022.2.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -129,7 +138,8 @@
       <workItem from="1669009203560" duration="831000" />
       <workItem from="1669340026024" duration="528000" />
       <workItem from="1669340671005" duration="2821000" />
-      <workItem from="1669344094981" duration="695000" />
+      <workItem from="1669344094981" duration="2001000" />
+      <workItem from="1670166143957" duration="4987000" />
     </task>
     <servers />
   </component>

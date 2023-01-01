@@ -76,12 +76,10 @@ namespace PrototypePackages.PrototypeUtils
                 if (Input.GetKeyDown( KeyCode.Mouse1 ))
                 {
                     user_input.input_mode = InputMode.Rotate;
-                    Cursor.lockState = CursorLockMode.Locked;
                 }
                 else if (Input.GetKeyDown( KeyCode.Mouse2 ))
                 {
                     user_input.input_mode = InputMode.Drag;
-                    Cursor.lockState = CursorLockMode.Locked;
                 }
             }
             else
@@ -91,8 +89,6 @@ namespace PrototypePackages.PrototypeUtils
                     Input.GetKeyUp( KeyCode.Mouse2 ) && user_input.input_mode == InputMode.Drag)
                 {
                     user_input.input_mode = InputMode.None;
-                    Cursor.lockState = CursorLockMode.None;
-
                 }
             }
 
