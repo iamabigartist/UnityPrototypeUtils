@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
+using UnityEditor.UIElements;
 using UnityEngine;
-using static UnityEditor.EditorGUIUtility;
+using UnityEngine.UIElements;
 namespace PrototypePackages.PrototypeUtils
 {
 	public interface IInstanceGenerator
@@ -60,6 +61,7 @@ namespace PrototypePackages.PrototypeUtils
 	{
 		List<Type> instance_types;
 		string[] type_names;
+		List<string> type_names_;
 		IInstanceGenerator Generator;
 
 		int CurChoice(SerializedProperty property)
@@ -73,40 +75,65 @@ namespace PrototypePackages.PrototypeUtils
 			property.AssignNewInstanceOfTypeToManagedReference(obj);
 		}
 
-		void OnTypeSelectionPopUp(Rect position, SerializedProperty property, GUIContent label)
-		{
-			var line_rect = position.UpPart(singleLineHeight);
-			var new_choice = EditorGUI.Popup(line_rect, label.text, CurChoice(property), type_names);
-			if (new_choice != CurChoice(property))
-			{
-				RefreshObject(property, new_choice);
-			}
-		}
-
 		bool inited;
 		void Init(SerializedProperty property)
 		{
 			var parent_type = property.GetTypeFromTypename();
 			instance_types = TypeCache.GetTypesDerivedFrom(parent_type).Where(Type => !Type.IsAbstract).ToList();
 			type_names = instance_types.Select(Type => Type.Name).ToArray();
+			type_names_ = type_names.ToList();
 			var atr = (PolymorphicSelectAttribute)fieldInfo.GetCustomAttributes(false).Single(a => a is PolymorphicSelectAttribute);
 			Generator = (IInstanceGenerator)Activator.CreateInstance(atr.InstanceGenType);
 			var current_type = property.managedReferenceValue?.GetType();
 			inited = true;
 		}
 
-		public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+
+		public override VisualElement CreatePropertyGUI(SerializedProperty property)
 		{
-			return EditorGUI.GetPropertyHeight(property, label, true);
+			Init(property);
+			var container = new VisualElement();
+			container.Add(CreatePopUp(property));
+			container.Add(new PropertyField(property));
+			return container;
 		}
 
-		public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+		VisualElement CreatePopUp(SerializedProperty property)
 		{
-			if (!inited) { Init(property); }
-			EditorGUI.BeginProperty(position, label, property);
-			OnTypeSelectionPopUp(position, property, label);
-			EditorGUI.PropertyField(position, property, GUIContent.none, true);
-			EditorGUI.EndProperty();
+			var pop_up = new DropdownField("type", type_names_, CurChoice(property));
+			pop_up.RegisterValueChangedCallback(Evt =>
+			{
+				var new_choice = Evt.newValue;
+				if (type_names_.IndexOf(new_choice) != CurChoice(property))
+				{
+					RefreshObject(property, type_names_.IndexOf(new_choice));
+				}
+			});
+			return pop_up;
 		}
+
+		// void OnTypeSelectionPopUp(Rect position, SerializedProperty property, GUIContent label)
+		// {
+		// 	var line_rect = position.UpPart(singleLineHeight);
+		// 	var new_choice = EditorGUI.Popup(line_rect, label.text, CurChoice(property), type_names);
+		// 	if (new_choice != CurChoice(property))
+		// 	{
+		// 		RefreshObject(property, new_choice);
+		// 	}
+		// }
+
+		// public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+		// {
+		// 	return EditorGUI.GetPropertyHeight(property, label, true);
+		// }
+		//
+		// public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+		// {
+		// 	if (!inited) { Init(property); }
+		// 	EditorGUI.BeginProperty(position, label, property);
+		// 	OnTypeSelectionPopUp(position, property, label);
+		// 	EditorGUI.PropertyField(position, property, GUIContent.none, true);
+		// 	EditorGUI.EndProperty();
+		// }
 	}
 }

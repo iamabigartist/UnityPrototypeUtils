@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestTimer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestTimer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/IDoFor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/IDoFor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Main.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Main.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E7 TestTime/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E7 TestTime/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/FixedIntervalTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/FixedIntervalTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/PrototypeUtils/Runtime/PolymorphicSelectionPropertyAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/PrototypeUtils/Runtime/PolymorphicSelectionPropertyAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +32,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/0d/ca8723c7/PopupField`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/1d/f25c6aa3/DropdownField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/41/a892b1ab/BaseField`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/469e18a818964f39910fa06bef052d8216a600/9c/594563b2/INotifyValueChanged`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -140,6 +146,8 @@
       <workItem from="1669340671005" duration="2821000" />
       <workItem from="1669344094981" duration="2001000" />
       <workItem from="1670166143957" duration="4987000" />
+      <workItem from="1672586176155" duration="635000" />
+      <workItem from="1672629755680" duration="2393000" />
     </task>
     <servers />
   </component>
