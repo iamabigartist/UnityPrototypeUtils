@@ -6,9 +6,9 @@ All kinds of Utils Collection for fast Unity prototype making. Currently self-us
 
 Use Unity Package Manager links below.
 
-main branch is Recommended, add #main to link like "https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils#main".
+main branch is Recommended, add #main to link like "https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/MiscUtils#main".
 
-dev branch is rapidly changing, add #dev to link like "https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/PrototypeUtils#dev".
+dev branch is rapidly changing, add #dev to link like "https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/MiscUtils#dev".
 
 ## List
 
