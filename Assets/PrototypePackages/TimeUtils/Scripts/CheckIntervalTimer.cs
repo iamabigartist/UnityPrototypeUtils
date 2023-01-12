@@ -1,7 +1,7 @@
 ﻿using System;
 namespace PrototypePackages.TimeUtils
 {
-	public class CheckIntervalTimer<TTime> where TTime : IComparable<TTime>
+	public class CheckIntervalTimer<TTime> 
 	{
 		Timer<TTime> timer;
 		TTime cur_interval;

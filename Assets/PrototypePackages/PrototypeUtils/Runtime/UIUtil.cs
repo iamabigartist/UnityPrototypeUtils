@@ -129,13 +129,6 @@ namespace PrototypePackages.PrototypeUtils
 
 		}
 
-		[Obsolete("Scene View coordinate is not compatible with camera Screen Space coordinate")]
-		public static Vector3 WorldToOnSceneViewGUIScreenPosition(this Camera camera, SceneView view, Vector3 world_position)
-		{
-			var screen_position = camera.WorldToScreenPoint(world_position);
-
-			return new(screen_position.x, view.position.height - screen_position.y, screen_position.z);
-		}
 		public static Rect PositionSizeRect(Vector2 position, Vector2 size)
 		{
 			return new(position - size / 2f, size);
