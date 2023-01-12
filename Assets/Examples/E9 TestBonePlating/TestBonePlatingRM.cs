@@ -1,8 +1,8 @@
 ﻿using System;
 using UnityEngine;
-using static Labs.TryImplementFSM.RM_2022_11_2.TestBonePlating.BonePlatingRM.MyEntryData.EntryType;
-using static Labs.TryImplementFSM.RM_2022_11_2.TestBonePlating.BonePlatingRM.UsageStateType;
-namespace Labs.TryImplementFSM.RM_2022_11_2.TestBonePlating
+using static Examples.E9_TestBonePlating.BonePlatingRM.MyEntryData.EntryType;
+using static Examples.E9_TestBonePlating.BonePlatingRM.UsageStateType;
+namespace Examples.E9_TestBonePlating
 {
 
 	public class TestBonePlatingRM : MonoBehaviour
