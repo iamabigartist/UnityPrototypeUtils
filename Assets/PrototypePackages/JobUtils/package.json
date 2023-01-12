@@ -14,5 +14,8 @@
         "email": "pch4178@gmail.com",
         "url": "https://github.com/iamabigartist"
     },
-    "dependencies": {}
+    "dependencies": {
+        "com.unity.burst": "1.7.4",
+        "com.unity.mathematics": "1.2.6"
+    }
 }
