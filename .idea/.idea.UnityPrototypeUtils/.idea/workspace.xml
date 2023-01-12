@@ -5,51 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/PlanePixelRuler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/PlanePixelRuler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/Resources/TextureTester.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/Resources/TextureTester.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/Resources/TextureTesterMaterial.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/Resources/TextureTesterMaterial.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/TextureTester.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/Scripts/TextureTester.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/DisplayUtils/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Chua.JobUtils.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Chua.JobUtils.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/IndexRandGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/IndexRandGenerator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/IndexUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/IndexUtils.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/MathematicsUtil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/MathematicsUtil.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template/IJobForRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template/IJobForRunner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template/IJobRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template/IJobRunner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template/JobFor_Optimized.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template/JobFor_Optimized.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template/Job_Optimized.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/Scripts/Template/Job_Optimized.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/JobUtils/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chua.JobUtils.csproj.DotSettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/ChangeWatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/ChangeWatcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/RuleMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/RuleMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/State.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/State.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/BonePlatingRM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/BonePlatingRM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/BonePlatingScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/BonePlatingScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/BuffRM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/BuffRM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/Resource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/Resource.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/TestBonePlatingRM.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TestBonePlating/TestBonePlatingRM.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TimeStamp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TimeStamp.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TreeType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/RuleMachine/Scripts/TreeType.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/PrototypeUtils/Runtime/PolymorphicSelectionPropertyAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/PrototypeUtils/Runtime/PolymorphicSelectionPropertyAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/PrototypeUtils/Runtime/UIUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/PrototypeUtils/Runtime/UIUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/CheckIntervalTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/CheckIntervalTimer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/TimeUtils/Scripts/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/SM3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/SM3/SM3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/SM3/SM3.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/StateMachine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/StateMachine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/StateMachine1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/StateMachine1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/StateMachine2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/StateMachine2/FSMInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/StateMachine2/FSMInterface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/dendron.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/dendron.yml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/vault.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/vault/.vscode/dendron.code-snippets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/vault/The Theory of StateMachine.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/vault/The Theory of StateMachine.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/vault/root.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/vault/root.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/vault/root.schema.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/StateMachine0/docs/vault/root.schema.yml.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
