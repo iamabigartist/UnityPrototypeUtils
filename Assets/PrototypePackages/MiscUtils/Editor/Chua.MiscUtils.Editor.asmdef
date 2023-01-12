@@ -1,5 +1,5 @@
 {
-    "name": "Chua.PrototypeUtils.Editor",
+    "name": "Chua.MiscUtils.Editor",
     "rootNamespace": "",
     "references": [
         "GUID:3b4692cdbf7b5b64fa6bfae8501b1ed8",
