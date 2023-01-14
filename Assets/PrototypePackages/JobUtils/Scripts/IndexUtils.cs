@@ -23,22 +23,12 @@ namespace PrototypePackages.JobUtils
 		#endregion
 
 		#region Indexer
-
-			public int this[int x, int y]
+			
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
+			public void To1D(in int x, in int y, out int i)
 			{
-				[MethodImpl(MethodImplOptions.AggressiveInlining)]
-				get => x + y * size.x;
+				i = x + y * size.x ;
 			}
-
-			public int this[int2 p]
-			{
-				[MethodImpl(MethodImplOptions.AggressiveInlining)]
-				get => this[p.x, p.y];
-			}
-
-		#endregion
-
-		#region Util
 
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			public void To2D(int i, out int x, out int y)
@@ -48,44 +38,48 @@ namespace PrototypePackages.JobUtils
 				x = i;
 			}
 
+		#endregion
+
+		#region Util
+
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool OutOfRange(int x, int y)
+			public bool OutOfRange(in int x,in int y)
 			{
 				return
 					x < 0 || x > size.x - 1 ||
 					y < 0 || y > size.y - 1;
 			}
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool OutOfRange(int2 p) => OutOfRange(p.x, p.y);
+			public bool OutOfRange(in int2 p) => OutOfRange(p.x, p.y);
 
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool IsEdge(int x, int y)
+			public bool IsEdge(in int x,in int y)
 			{
 				return
 					x == 0 || x == size.x - 1 ||
 					y == 0 || y == size.y - 1;
 			}
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool IsEdge(int2 p) => IsEdge(p.x, p.y);
+			public bool IsEdge(in int2 p) => IsEdge(p.x, p.y);
 
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool IsPositiveEdge(int x, int y)
+			public bool IsPositiveEdge(in int x,in int y)
 			{
 				return
 					x == size.x - 1 ||
 					y == size.y - 1;
 			}
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool IsPositiveEdge(int2 p) => IsPositiveEdge(p.x, p.y);
+			public bool IsPositiveEdge(in int2 p) => IsPositiveEdge(p.x, p.y);
 
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public int2 SampleUV(float u, float v)
+			public int2 SampleUV( in float u,in float v)
 			{
 				return (int2)round(new float2(size.x * u - 0.5f, size.y * v - 0.5f));
 			}
 
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public int2 RepeatWrap(int2 p)
+			public int2 RepeatWrap(in int2 p)
 			{
 				var result = p;
 				if (p.x >= size.x) { result.x -= size.x; }
@@ -113,36 +107,12 @@ namespace PrototypePackages.JobUtils
 		#endregion
 
 		#region Indexer
-
-			public int this[int x, int y, int z]
+			
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
+			public void To1D(in int x, in int y, in int z, out int i)
 			{
-				[MethodImpl(MethodImplOptions.AggressiveInlining)]
-				get => x + y * size.x + z * size.y * size.x;
+				i = x + y * size.x + z * size.y * size.x;
 			}
-			public int this[int3 p]
-			{
-				[MethodImpl(MethodImplOptions.AggressiveInlining)]
-				get => this[p.x, p.y, p.z];
-			}
-
-			public int3 this[int i]
-			{
-				[MethodImpl(MethodImplOptions.AggressiveInlining)]
-				get
-				{
-					int z = i / (size.x * size.y);
-					i -= z * size.x * size.y;
-					int y = i / size.x;
-					i -= y * size.x;
-					int x = i;
-
-					return new(x, y, z);
-				}
-			}
-
-		#endregion
-
-		#region Util
 
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
 			public void To3D(int i, out int x, out int y, out int z)
@@ -154,8 +124,14 @@ namespace PrototypePackages.JobUtils
 				x = i;
 			}
 
+		#endregion
+
+		#region Util
+
+			
+
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool OutOfRange(int x, int y, int z)
+			public bool OutOfRange(in int x,in int y,in int z)
 			{
 				return
 					x < 0 || x > size.x - 1 ||
@@ -163,10 +139,10 @@ namespace PrototypePackages.JobUtils
 					z < 0 || z > size.z - 1;
 			}
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool OutOfRange(int3 p) => OutOfRange(p.x, p.y, p.z);
+			public bool OutOfRange(in int3 p) => OutOfRange(p.x, p.y, p.z);
 
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool IsEdge(int x, int y, int z)
+			public bool IsEdge(in int x,in int y,in int z)
 			{
 				return
 					x == 0 || x == size.x - 1 ||
@@ -174,11 +150,11 @@ namespace PrototypePackages.JobUtils
 					z == 0 || z == size.z - 1;
 			}
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool IsEdge(int3 p) => IsEdge(p.x, p.y, p.z);
+			public bool IsEdge(in int3 p) => IsEdge(p.x, p.y, p.z);
 
 
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool IsPositiveEdge(int x, int y, int z)
+			public bool IsPositiveEdge(in int x,in int y,in int z)
 			{
 				return
 					x == size.x - 1 ||
@@ -186,7 +162,7 @@ namespace PrototypePackages.JobUtils
 					z == size.z - 1;
 			}
 			[MethodImpl(MethodImplOptions.AggressiveInlining)]
-			public bool IsPositiveEdge(int3 p) => IsPositiveEdge(p.x, p.y, p.z);
+			public bool IsPositiveEdge(in int3 p) => IsPositiveEdge(p.x, p.y, p.z);
 
 		#endregion
 		}
