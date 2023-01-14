@@ -4,6 +4,7 @@ using PrototypePackages.JobUtils;
 using Unity.Collections;
 using Unity.Mathematics;
 using UnityEngine;
+using static PrototypePackages.JobUtils.IndexUtil;
 namespace PrototypePackages.DisplayUtils
 {
 	[RequireComponent(typeof(Renderer), typeof(Collider))]
