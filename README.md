@@ -24,6 +24,12 @@ https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypeP
 https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/TimeUtils#dev
 ```
 
+### MathematicsUtils
+
+```markdown
+https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/MathematicsUtils#dev
+```
+
 ### JobUtils
 
 ```markdown
