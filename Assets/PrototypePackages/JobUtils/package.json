@@ -1,6 +1,6 @@
 {
     "name": "com.chua.job-utils",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "displayName": "Job Utils",
     "description": "Job tools, templates and utils",
     "unity": "2019.4",
