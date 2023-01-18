@@ -1,5 +1,4 @@
-﻿using Unity.Mathematics;
-namespace PrototypePackages.JobUtils
+﻿namespace PrototypePackages.MathematicsUtils.Random
 {
 	/// <summary>
 	///     是否有必要使用来简化代码？
@@ -15,6 +14,6 @@ namespace PrototypePackages.JobUtils
 		{
 			return seed ^ i;
 		}
-		public void Gen(int i, out Random rand) { rand = Random.CreateFromIndex(RandIndex_XOR((uint)i)); }
+		public void Gen(int i, out Unity.Mathematics.Random rand) { rand = Unity.Mathematics.Random.CreateFromIndex(RandIndex_XOR((uint)i)); }
 	}
 }

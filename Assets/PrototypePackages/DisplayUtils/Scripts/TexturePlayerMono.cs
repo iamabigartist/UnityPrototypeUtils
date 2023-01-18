@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
 using PrototypePackages.JobUtils;
+using PrototypePackages.MathematicsUtils;
+using PrototypePackages.MathematicsUtils.Index;
+using PrototypePackages.MathematicsUtils.Vector;
 using Unity.Collections;
 using Unity.Mathematics;
 using UnityEngine;
-using static PrototypePackages.JobUtils.IndexUtil;
 namespace PrototypePackages.DisplayUtils
 {
 	[RequireComponent(typeof(Renderer), typeof(Collider))]
