@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
-using static PrototypePackages.PrototypeUtils.UIUtils;
-namespace PrototypePackages.PrototypeUtils
+using static PrototypePackages.MiscUtils.UIUtils;
+namespace PrototypePackages.MiscUtils
 {
     [Serializable]
     public class MeshInfoGUIPlot<TSource>

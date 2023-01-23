@@ -1,4 +1,5 @@
-﻿using Unity.Mathematics;
+﻿using System.Runtime.CompilerServices;
+using Unity.Mathematics;
 namespace PrototypePackages.MathematicsUtils.ValueTransformers
 {
 	public struct Float2Transformer : IValueTransformer<float2>
@@ -10,6 +11,8 @@ namespace PrototypePackages.MathematicsUtils.ValueTransformers
 			this.scale = scale;
 			this.offset = offset;
 		}
+		
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public void Transform(in float2 original_value, out float2 transformed_value)
 		{
 			transformed_value = original_value * scale + offset;

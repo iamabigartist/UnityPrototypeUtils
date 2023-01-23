@@ -1,6 +1,6 @@
 ﻿using System;
 using UnityEngine;
-namespace PrototypePackages.PrototypeUtils
+namespace PrototypePackages.MiscUtils
 {
     public static class TextureUtil
     {

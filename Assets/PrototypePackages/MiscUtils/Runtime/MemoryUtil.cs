@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using System.Runtime.Serialization.Json;
-namespace PrototypePackages.PrototypeUtils
+namespace PrototypePackages.MiscUtils
 {
     public static class MemoryUtil
     {

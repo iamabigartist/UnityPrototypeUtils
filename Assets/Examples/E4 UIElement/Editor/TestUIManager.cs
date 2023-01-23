@@ -1,4 +1,4 @@
-﻿using PrototypePackages.PrototypeUtils;
+﻿using PrototypePackages.MiscUtils;
 using UnityEditor;
 using UnityEngine.UIElements;
 namespace Examples.E4_UIElement.Editor

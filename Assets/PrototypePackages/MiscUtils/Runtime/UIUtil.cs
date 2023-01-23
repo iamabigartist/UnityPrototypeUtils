@@ -1,8 +1,7 @@
 ﻿using System;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
-namespace PrototypePackages.PrototypeUtils
+namespace PrototypePackages.MiscUtils
 {
 	public static class UIUtils
 	{

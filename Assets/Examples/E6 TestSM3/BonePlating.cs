@@ -1,4 +1,4 @@
-﻿using PrototypePackages.PrototypeUtils.StateMachine0.SM3;
+﻿using PrototypePackages.MiscUtils.Archive.StateMachine0.SM3;
 using PrototypePackages.TimeUtils;
 namespace Examples.E6_TestSM3
 {

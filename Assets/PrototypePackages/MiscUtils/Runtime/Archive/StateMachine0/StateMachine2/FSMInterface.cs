@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-namespace PrototypePackages.PrototypeUtils.StateMachine0.StateMachine2
+namespace PrototypePackages.MiscUtils.Archive.StateMachine0.StateMachine2
 {
 	public abstract class FSMInterface<T> where T : class
 	{

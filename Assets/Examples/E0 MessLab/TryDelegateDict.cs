@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using PrototypePackages.PrototypeUtils;
+using PrototypePackages.MiscUtils;
 using PrototypePackages.TimeUtils;
 using UnityEngine;
 using Debug = UnityEngine.Debug;

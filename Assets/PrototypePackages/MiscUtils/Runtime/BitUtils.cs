@@ -1,4 +1,4 @@
-﻿namespace PrototypePackages.PrototypeUtils
+﻿namespace PrototypePackages.MiscUtils
 {
     public static class BitUtils
     {

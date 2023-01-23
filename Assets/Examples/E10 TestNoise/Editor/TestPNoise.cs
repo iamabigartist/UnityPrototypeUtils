@@ -50,7 +50,7 @@ namespace Examples.E10_TestNoise.Editor
 		void Generate()
 		{
 			var array = new NativeArray<float>(DisplayTexture.Size().area(), Allocator.TempJob);
-			IPlanFor.Plan(new TestPNoiseJob(new(0.01f, 0, 2, 1, new(100)), DisplayTexture.Size(), array)).Complete();
+			IPlanFor.Plan(new TestPNoiseJob(new(0.01f, 0, 2, 1, new(2, 1, 100)), DisplayTexture.Size(), array)).Complete();
 			DisplayTexture.SetTextureSlice(array, 0);
 			DisplayTexture.SetTextureSlice(array, 1);
 			DisplayTexture.SetTextureSlice(array, 2);

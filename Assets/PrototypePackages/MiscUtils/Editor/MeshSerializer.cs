@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
-namespace PrototypePackages.PrototypeUtils
+namespace PrototypePackages.MiscUtils.Editor
 {
     [Serializable]
     public class MeshSerializer : EditorWindow

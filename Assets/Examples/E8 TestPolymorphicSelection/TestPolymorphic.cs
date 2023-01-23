@@ -1,5 +1,6 @@
 using System;
-using PrototypePackages.PrototypeUtils;
+using PrototypePackages.MiscUtils;
+using PrototypePackages.MiscUtils.Editor;
 using UnityEngine;
 namespace Examples.E8_TestPolymorphicSelection
 {

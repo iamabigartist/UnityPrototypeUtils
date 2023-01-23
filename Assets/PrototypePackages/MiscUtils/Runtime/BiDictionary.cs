@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-namespace PrototypePackages.PrototypeUtils
+namespace PrototypePackages.MiscUtils
 {
 	public class BiDictionary<TLValue, TRValue>
 	{

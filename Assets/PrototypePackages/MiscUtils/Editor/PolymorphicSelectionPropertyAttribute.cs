@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
-namespace PrototypePackages.PrototypeUtils
+namespace PrototypePackages.MiscUtils.Editor
 {
 	public interface IInstanceGenerator
 	{
