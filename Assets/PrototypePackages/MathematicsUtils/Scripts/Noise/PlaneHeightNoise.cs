@@ -6,8 +6,8 @@ namespace PrototypePackages.MathematicsUtils.Noise
 	public struct PlaneHeightNoise<TCoherentNoise> : ICoherentNoise<float2, float>
 		where TCoherentNoise : ICoherentNoise<float2, float>
 	{
-		Float2Transformer position_transformer;
-		FloatTransformer height_transformer;
+		sampler_f2 position_sampler;
+		sampler_f height_sampler;
 		TCoherentNoise source_noise;
 		public PlaneHeightNoise(
 			float2 position_scale, float2 position_offset,
@@ -15,17 +15,17 @@ namespace PrototypePackages.MathematicsUtils.Noise
 			TCoherentNoise source_noise
 		)
 		{
-			position_transformer = new(position_scale, position_offset);
-			height_transformer = new(height_scale, height_offset);
+			position_sampler = new(new(position_offset, position_scale));
+			height_sampler = new(new(height_offset, height_scale));
 			this.source_noise = source_noise;
 		}
 
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public void Sample(in float2 input_pos, out float output_height)
-		{
-			position_transformer.Transform(input_pos, out var sample_pos);
+		{ 
+			position_sampler.TransformIn(input_pos, out var sample_pos);
 			source_noise.Sample(sample_pos, out var noise_value);
-			height_transformer.Transform(noise_value, out output_height);
+			height_sampler.TransformOut(noise_value, out output_height);
 		}
 	}
 }

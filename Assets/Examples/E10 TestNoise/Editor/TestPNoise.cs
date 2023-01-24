@@ -1,7 +1,9 @@
-﻿using PrototypePackages.JobUtils.Template;
+﻿using System.Linq;
+using PrototypePackages.JobUtils.Template;
 using PrototypePackages.MathematicsUtils.Index;
 using PrototypePackages.MathematicsUtils.Noise;
 using PrototypePackages.MathematicsUtils.Vector;
+using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
 using Unity.Mathematics;
@@ -13,14 +15,15 @@ using static Unity.Mathematics.math;
 using static VolumeMegaStructure.Util.JobSystem.ScheduleUtils;
 namespace Examples.E10_TestNoise.Editor
 {
+	[BurstCompile(OptimizeFor = OptimizeFor.Performance, DisableSafetyChecks = true)]
 	public struct TestPNoiseJob : IJobFor, IPlanFor
 	{
 		public int length => array.Length;
 		public int batch => length / GetBatchSize_WorkerThreadCount(length, 1.5f);
 
-		PlaneHeightNoise<PerlinNoise_f2> pnoise;
-		Index2D c;
-		[WriteOnly] NativeArray<float> array;
+		[NoAlias] PlaneHeightNoise<PerlinNoise_f2> pnoise;
+		[NoAlias] Index2D c;
+		[NoAlias] [WriteOnly] NativeArray<float> array;
 		public void Execute(int i)
 		{
 			c.To2D(i, out var x, out var y);
@@ -50,7 +53,9 @@ namespace Examples.E10_TestNoise.Editor
 		void Generate()
 		{
 			var array = new NativeArray<float>(DisplayTexture.Size().area(), Allocator.TempJob);
-			IPlanFor.Plan(new TestPNoiseJob(new(0.01f, 0, 2, 1, new(2, 1, 100)), DisplayTexture.Size(), array)).Complete();
+			IPlanFor.Plan(new TestPNoiseJob(new(0.1f, 0, 1, 0, new(new(1f, 0.5f), 100)), DisplayTexture.Size(), array)).Complete();
+			Debug.Log(array.ToArray().Max());
+			Debug.Log(array.ToArray().Min());
 			DisplayTexture.SetTextureSlice(array, 0);
 			DisplayTexture.SetTextureSlice(array, 1);
 			DisplayTexture.SetTextureSlice(array, 2);
@@ -62,7 +67,7 @@ namespace Examples.E10_TestNoise.Editor
 		void OnEnable()
 		{
 			Debug.Log("OnEnable");
-			const int exp = 10;
+			const int exp = 8;
 			int len = (int)pow(2, exp);
 			CreateDisplayTexture(new(len, len), out DisplayTexture);
 			Generate();
@@ -71,17 +76,16 @@ namespace Examples.E10_TestNoise.Editor
 		void CreateGUI()
 		{
 			Debug.Log("CreateGUI");
-			var scroll_view = new ScrollView(ScrollViewMode.VerticalAndHorizontal) {};
-			var container = new VisualElement
+			var scroll_view = new ScrollView(ScrollViewMode.VerticalAndHorizontal);
+			scroll_view.Add(new Image
 			{
+				image = DisplayTexture,
 				style =
 				{
 					width = 512,
 					height = 512
 				}
-			};
-			container.Add(new Image { image = DisplayTexture });
-			scroll_view.Add(container);
+			});
 			rootVisualElement.Add(scroll_view);
 		}
 

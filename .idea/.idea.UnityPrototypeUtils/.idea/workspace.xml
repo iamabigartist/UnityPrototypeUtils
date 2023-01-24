@@ -5,46 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/ISampler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/sample_transform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/sample_transform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/sampler_f.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/sampler_f2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/ShowHiePath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/ShowHiePath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryDelegateDict.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TryDelegateDict.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TrySingletonMono.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E0 MessLab/TrySingletonMono.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/E10 TestNoise/Editor/TestPNoise.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E10 TestNoise/Editor/TestPNoise.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI/MeshPlotterShow1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI/MeshPlotterShow1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI/RangeVertexGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E2 MeshInfoGUI/RangeVertexGUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E3 Round/Editor/TestRound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E3 Round/Editor/TestRound.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E5 StateController/PublicChatManager1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E6 TestSM3/BonePlating.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/Noise/PerlinNoise_f2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/Noise/PerlinNoise_f2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/Float2Transformer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/Float2Transformer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/FloatTransformer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/FloatTransformer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/MeshSerializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/MeshSerializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/PolymorphicSelectionPropertyAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/PolymorphicSelectionPropertyAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Archive/StateMachine0/SM3/SM3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Archive/StateMachine0/SM3/SM3.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Archive/StateMachine0/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Archive/StateMachine0/StateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Archive/StateMachine0/StateMachine1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Archive/StateMachine0/StateMachine1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Archive/StateMachine0/StateMachine2/FSMInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Archive/StateMachine0/StateMachine2/FSMInterface.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/AyncUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/AyncUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/BiDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/BiDictionary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/BitUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/BitUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Dictionary_S.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Dictionary_S.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/EnumerateUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/EnumerateUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/MemoryUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/MemoryUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/MeshInfoGUIPlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/MeshInfoGUIPlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/MeshUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/MeshUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/MiscUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/MiscUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/TextureUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/TextureUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/UIElementManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/UIElementManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/UIUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/UIUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/UnityEditorCameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/UnityEditorCameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/ValueSyncer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/ValueSyncer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/VectorUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/VectorUtil.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/Noise/PlaneHeightNoise.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/Noise/PlaneHeightNoise.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/Float2Transformer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/Float2Transformer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/sampler_f2.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/FloatTransformer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/FloatTransformer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/sampler_f.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/IValueTransformer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/IValueTransformer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MathematicsUtils/Scripts/ValueTransformers/ISampler.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,20 +66,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\2022.2.2f1\Editor\Unity.exe" />
@@ -194,7 +170,9 @@
       <workItem from="1673715137002" duration="330000" />
       <workItem from="1674009485182" duration="14052000" />
       <workItem from="1674266058012" duration="116000" />
-      <workItem from="1674486698011" duration="423000" />
+      <workItem from="1674486698011" duration="485000" />
+      <workItem from="1674492643106" duration="1554000" />
+      <workItem from="1674528455660" duration="2966000" />
     </task>
     <servers />
   </component>
