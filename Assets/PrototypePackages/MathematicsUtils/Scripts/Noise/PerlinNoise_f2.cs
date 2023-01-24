@@ -1,15 +1,12 @@
 ﻿using System.Runtime.CompilerServices;
-using PrototypePackages.MathematicsUtils.ValueTransformers;
 using Unity.Mathematics;
 namespace PrototypePackages.MathematicsUtils.Noise
 {
 	public struct PerlinNoise_f2 : ICoherentNoise<float2, float>
 	{
-		public sample_transform<float> transform;
 		public float2 rep;
-		public PerlinNoise_f2(sample_transform<float> transform, float2 rep)
+		public PerlinNoise_f2(float2 rep)
 		{
-			this.transform = transform;
 			this.rep = rep;
 		}
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
