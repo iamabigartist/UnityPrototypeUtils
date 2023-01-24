@@ -30,8 +30,8 @@ namespace Examples.E10_TestNoise.Editor
 			c.To2D(i, out var x, out var y);
 			pnoise.Sample(new(x, y), out var height);
 			var test_p = pnoise(new float2(x, y), 100);
-			Debug.Log(
-				$"pos: {x},{y}, height: {height}");
+			// Debug.Log(
+			// 	$"pos: {x},{y}, height: {height}");
 			array[i] = height;
 		}
 
