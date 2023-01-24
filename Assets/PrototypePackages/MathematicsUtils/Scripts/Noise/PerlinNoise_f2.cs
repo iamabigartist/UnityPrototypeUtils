@@ -15,7 +15,7 @@ namespace PrototypePackages.MathematicsUtils.Noise
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public void Sample(in float2 input, out float output)
 		{
-			output = (noise.pnoise(input, rep) + transform.offset) * transform.scale;
+			output = (noise.pnoise(input, rep) + 1) / 2f;
 		}
 	}
 }
