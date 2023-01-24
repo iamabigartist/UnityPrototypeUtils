@@ -29,9 +29,9 @@ namespace Examples.E10_TestNoise.Editor
 		{
 			c.To2D(i, out var x, out var y);
 			pnoise.Sample(new(x, y), out var height);
-			var test_p= pnoise(new float2(x, y), 100);
-			// Debug.Log(
-			// 	$"pos: {x},{y}, height: {height}");
+			var test_p = pnoise(new float2(x, y), 100);
+			Debug.Log(
+				$"pos: {x},{y}, height: {height}");
 			array[i] = height;
 		}
 
@@ -57,7 +57,7 @@ namespace Examples.E10_TestNoise.Editor
 		void Generate()
 		{
 			var array = new NativeArray<float>(DisplayTexture.Size().area(), Allocator.TempJob);
-			IPlanFor.Plan(new TestPNoiseJob(new(0.01f, 0, 1, 0, new(100)), DisplayTexture.Size(), array)).Complete();
+			IPlanFor.Plan(new TestPNoiseJob(new(new(0.01f, 0), new(1, 0), new(100)), DisplayTexture.Size(), array)).Complete();
 			Debug.Log(array.ToArray().Max());
 			Debug.Log(array.ToArray().Min());
 			DisplayTexture.SetTextureSlice(array, 0);
