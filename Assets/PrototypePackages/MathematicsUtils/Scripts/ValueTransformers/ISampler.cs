@@ -12,7 +12,7 @@ namespace PrototypePackages.MathematicsUtils.ValueTransformers
 
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static void TransformIn<TSampler, TValue>(this TSampler sampler, in TValue value, out TValue value_in)
-			where TSampler : ISampler<TValue>
+			where TSampler : struct, ISampler<TValue>
 			where TValue : struct
 		{
 			value_in = sampler.mul(sampler.add(value, sampler.transform.offset), sampler.transform.scale);
@@ -20,7 +20,7 @@ namespace PrototypePackages.MathematicsUtils.ValueTransformers
 
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static void TransformOut<TSampler, TValue>(this TSampler sampler, in TValue value, out TValue value_out)
-			where TSampler : ISampler<TValue>
+			where TSampler : struct, ISampler<TValue>
 			where TValue : struct
 		{
 			value_out = sampler.add(sampler.mul(value, sampler.transform.scale), sampler.transform.offset);
