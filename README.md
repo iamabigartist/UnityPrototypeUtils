@@ -41,3 +41,9 @@ https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypeP
 ```markdown
 https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/DisplayUtils#dev
 ```
+
+### MainThreadExecutor
+
+```markdown
+https://github.com/iamabigartist/UnityPrototypeUtils.git?path=/Assets/PrototypePackages/MainThreadExecutor#dev
+```
