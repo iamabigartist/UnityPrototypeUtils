@@ -1,0 +1,16 @@
+{
+    "name": "Chua.MainThreadExecutor.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a6835809ecdd55d4982d8806b7ab28e7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

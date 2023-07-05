@@ -2,7 +2,7 @@ using Unity.Collections;
 using Unity.Jobs;
 using Unity.Jobs.LowLevel.Unsafe;
 using static Unity.Mathematics.math;
-namespace VolumeMegaStructure.Util.JobSystem
+namespace PrototypePackages.JobUtils
 {
 	public static class ScheduleUtils
 	{

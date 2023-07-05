@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Jobs.LowLevel.Unsafe;
-namespace VolumeMegaStructure.Util.JobSystem
+namespace PrototypePackages.JobUtils
 {
     /// <summary>
     ///     <see href="https://thinksimulator.ph/2021/11/20/some-dots-utilities-nativecounter-and-nativesum/" />

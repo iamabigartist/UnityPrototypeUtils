@@ -1,0 +1,19 @@
+{
+    "name": "com.chua.main-thread-executor",
+    "version": "0.0.1",
+    "displayName": "Main Thread Executor",
+    "description": "Utils for execute individual task on main thread.",
+    "unity": "2019.4",
+    "keywords": [
+        "utility",
+        "main thread"
+    ],
+    "author": {
+        "name": "Chua",
+        "email": "pch4178@gmail.com",
+        "url": "https://github.com/iamabigartist"
+    },
+    "dependencies": {
+
+    }
+}

@@ -13,7 +13,7 @@ using UnityEngine.UIElements;
 using static PrototypePackages.DisplayUtils.EasyDisplayTexture;
 using static Unity.Mathematics.math;
 using static Unity.Mathematics.noise;
-using static VolumeMegaStructure.Util.JobSystem.ScheduleUtils;
+using static PrototypePackages.JobUtils.ScheduleUtils;
 namespace Examples.E10_TestNoise.Editor
 {
 	[BurstCompile(OptimizeFor = OptimizeFor.Performance, DisableSafetyChecks = true)]
