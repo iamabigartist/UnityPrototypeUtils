@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/NodeTree/Runtime/Container.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/NodeTree/Runtime/Util.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E11 TestMatrix.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E11 TestMatrix/TestTRSMatrix.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E11 TestMatrix/TestTRSMatrix.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E12 TestJoint.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E12 TestJoint/Bone.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E12 TestJoint/Bone.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E12 TestJoint/CDDBone.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E12 TestJoint/CDDBoneController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E12 TestJoint/CDDBoneController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E12 TestJoint/JointMain.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E12 TestJoint/JointMain.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/Backpack/Runtime/Scripts/View/ListBased.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +39,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/61c05f8d81804e929ff4198c5bcc7a6216e400/16/38494052/JobsUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/865a16dad8f3433f9d5c9b698c415f4535e388/d1/ec4b742a/Executor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/E12 TestJoint/CDDJointController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/Noise/classicnoise2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/Noise/noise2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/Noise/psrdnoise2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/30adf90198bc4c4b83910c6fb1877998174000/17/972256de/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -201,6 +209,8 @@
       <workItem from="1688572407340" duration="639000" />
       <workItem from="1700493623010" duration="45000" />
       <workItem from="1700493761566" duration="1721000" />
+      <workItem from="1701004402085" duration="4359000" />
+      <workItem from="1701017646020" duration="8212000" />
     </task>
     <servers />
   </component>
@@ -228,5 +238,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Examples/E12 TestJoint/CDDBoneController.cs</url>
+          <line>75</line>
+          <properties documentPath="C:\MyDocs\MyRepos\UnityPrototypeUtils\Assets\Examples\E12 TestJoint\CDDBoneController.cs" initialLine="75" containingFunctionPresentation="Method 'OnDrawGizmos'">
+            <startOffsets>
+              <option value="2179" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2180" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
