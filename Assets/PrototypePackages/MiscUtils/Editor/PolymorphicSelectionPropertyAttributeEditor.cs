@@ -7,25 +7,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 namespace PrototypePackages.MiscUtils.Editor
 {
-	public interface IInstanceGenerator
-	{
-		object Generate(Type type);
-	}
 
-	public class DefaultInstanceGenerator : IInstanceGenerator
-	{
-		public object Generate(Type type)
-		{
-			return Activator.CreateInstance(type);
-		}
-	}
-
-	public class PolymorphicSelectAttribute : PropertyAttribute
-	{
-		public Type InstanceGenType;
-		public PolymorphicSelectAttribute() { InstanceGenType = typeof(DefaultInstanceGenerator); }
-		public PolymorphicSelectAttribute(Type InstanceGenType) { this.InstanceGenType = InstanceGenType; }
-	}
 
 	public static class UnityUISerializeUtil
 	{
