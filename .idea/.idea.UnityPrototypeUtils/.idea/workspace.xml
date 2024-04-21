@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MainThreadExecutor/Editor/Chua.MainThreadExecutor.Editor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MainThreadExecutor/Editor/Chua.MainThreadExecutor.Editor.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MainThreadExecutor/Editor/LiteEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MainThreadExecutor/Editor/LiteEditorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestEditorRunner.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestEditorRunner.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +79,14 @@
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/My project.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\MyDocs\MyRepos\UnityPrototypeUtils\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity Editors\2022.3.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils -debugCodeOptimization" />
@@ -198,7 +207,7 @@
       <workItem from="1700493761566" duration="1721000" />
       <workItem from="1701004402085" duration="4359000" />
       <workItem from="1701017646020" duration="8212000" />
-      <workItem from="1713718132308" duration="2680000" />
+      <workItem from="1713718132308" duration="3663000" />
     </task>
     <servers />
   </component>

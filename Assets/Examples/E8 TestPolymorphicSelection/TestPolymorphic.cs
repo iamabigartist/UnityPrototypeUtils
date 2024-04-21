@@ -1,6 +1,3 @@
-#if UNITY_EDITOR
-
-
 using System;
 using PrototypePackages.MiscUtils;
 using UnityEngine;
@@ -34,5 +31,3 @@ public class TestPolymorphic : MonoBehaviour
 	void Update() {}
 }
 }
-
-#endif
