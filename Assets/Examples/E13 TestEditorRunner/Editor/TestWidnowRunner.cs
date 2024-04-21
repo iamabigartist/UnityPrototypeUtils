@@ -1,3 +1,5 @@
+#if UNITY_EDITOR
+
 using System;
 using PrototypePackages.MainThreadExecutor.Editor;
 using UnityEditor;
@@ -31,3 +33,5 @@ public static class TestWindowRunner
 		}
 	}
 }
+
+#endif

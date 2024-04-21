@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestEditorRunner.Editor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestEditorRunner.Editor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestWidnowRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestWidnowRunner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/EditorRefence.asmref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/EditorRefence.asmref.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MainThreadExecutor/Editor/Chua.MainThreadExecutor.Editor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MainThreadExecutor/Editor/Chua.MainThreadExecutor.Editor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MainThreadExecutor/Editor/LiteEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MainThreadExecutor/Editor/LiteEditorWindow.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +26,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/NewBehaviourScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestWidnowRunner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/Noise/classicnoise2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/Noise/noise2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/Noise/psrdnoise2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5d5ebefe97114215928ac1d9cd096522953800/de/20040314/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -201,7 +198,7 @@
       <workItem from="1700493761566" duration="1721000" />
       <workItem from="1701004402085" duration="4359000" />
       <workItem from="1701017646020" duration="8212000" />
-      <workItem from="1713718132308" duration="1464000" />
+      <workItem from="1713718132308" duration="2680000" />
     </task>
     <servers />
   </component>

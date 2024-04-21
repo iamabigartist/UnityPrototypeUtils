@@ -1,4 +1,7 @@
-﻿using PrototypePackages.MainThreadExecutor.Scripts;
+﻿#if UNITY_EDITOR
+
+using System;
+using PrototypePackages.MainThreadExecutor.Scripts;
 using UnityEditor;
 using UnityEngine.UIElements;
 namespace PrototypePackages.MainThreadExecutor.Editor
@@ -7,8 +10,8 @@ public class LiteEditorWindow : Executor
 {
 	public EditorWindow window;
 	public VisualElement root;
-	EditorApplication.CallbackFunction on_update;
-	public LiteEditorWindow(string title, EditorApplication.CallbackFunction on_update = default)
+	Action on_update;
+	public LiteEditorWindow(string title, Action on_update = default)
 	{
 		window = EditorWindow.CreateWindow<EditorWindow>(title);
 		root = window.rootVisualElement;
@@ -28,3 +31,5 @@ public class LiteEditorWindow : Executor
 	}
 }
 }
+
+#endif
