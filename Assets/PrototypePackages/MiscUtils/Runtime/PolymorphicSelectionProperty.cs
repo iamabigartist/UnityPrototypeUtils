@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 namespace PrototypePackages.MiscUtils
 {
 public interface IInstanceGenerator
@@ -14,7 +15,7 @@ public class DefaultInstanceGenerator : IInstanceGenerator
 	}
 }
 
-public class PolymorphicSelectAttribute : Attribute
+public class PolymorphicSelectAttribute : PropertyAttribute
 {
 	public Type InstanceGenType;
 	public PolymorphicSelectAttribute() { InstanceGenType = typeof(DefaultInstanceGenerator); }

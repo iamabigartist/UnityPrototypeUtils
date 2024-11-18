@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/SerVETree.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/SerVETree.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVETree.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVETree.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Editor/CatDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Editor/CatDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/EditorUIUtil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/EditorUIUtil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/TestTreeDraw.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/TestTreeDraw.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/PolymorphicSelectionPropertyAttributeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/PolymorphicSelectionPropertyAttributeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/SerVETree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/SerVETree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/VENode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/VENode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/PolymorphicSelectionProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/PolymorphicSelectionProperty.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/UIUtil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/UIUtil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +76,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -81,7 +90,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.26f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity Editors\6000.0.26f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -89,7 +98,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.26f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity Editors\6000.0.26f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -209,6 +218,9 @@
       <workItem from="1713718132308" duration="3663000" />
       <workItem from="1731898662963" duration="3770000" />
       <workItem from="1731925446235" duration="1999000" />
+      <workItem from="1731939297302" duration="335000" />
+      <workItem from="1731940252225" duration="190000" />
+      <workItem from="1731940607868" duration="3312000" />
     </task>
     <servers />
   </component>

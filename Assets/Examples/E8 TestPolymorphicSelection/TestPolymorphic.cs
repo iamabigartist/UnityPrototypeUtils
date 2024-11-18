@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using PrototypePackages.MiscUtils;
 using UnityEngine;
 namespace Examples.E8_TestPolymorphicSelection
@@ -23,8 +24,9 @@ public class Cat : Animal
 
 public class TestPolymorphic : MonoBehaviour
 {
-	[SerializeReference] [PolymorphicSelect]
-	Animal[] animals;
+	[SerializeReference]
+	[PolymorphicSelect]
+	public List<Animal> animal;
 
 	void Start() {}
 

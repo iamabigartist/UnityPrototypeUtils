@@ -1,9 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
-public class VENode : IEnumerable<VENode>
+public abstract class VENode : IEnumerable<VENode>
 {
-	public virtual VisualElement GenerateVisualElement() => new();
+	public abstract VisualElement CreateVE();
+	public virtual VisualElement PostGenerateVE(VisualElement root) => root;
+	public virtual void AddChildrenVE(VisualElement root, List<VisualElement> children)
+	{
+		foreach (var child in children) { root.Add(child); }
+	}
+	public VisualElement GenerateVE()
+	{
+		var ve = CreateVE();
+		var children = new List<VisualElement>();
+		foreach (var child in this) { children.Add(child.GenerateVE()); }
+		AddChildrenVE(ve, children);
+		ve = PostGenerateVE(ve);
+		return ve;
+	}
 	public List<VENode> Children = new();
 	public void Add(VENode node) => Children.Add(node);
 	public IEnumerator<VENode> GetEnumerator() => Children.GetEnumerator();
