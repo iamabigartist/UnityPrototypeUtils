@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
-public abstract class VENode : IEnumerable<VENode>
+namespace UnitySerVE
 {
-	public abstract VisualElement CreateVE();
+public class VENode : IEnumerable<VENode>
+{
+	public VENode(VisualElement default_ve = null) => DefaultVE = default_ve;
+	public VisualElement DefaultVE;
+	public virtual VisualElement CreateVE() => DefaultVE ?? new();
 	public virtual VisualElement PostGenerateVE(VisualElement root) => root;
 	public virtual void AddChildrenVE(VisualElement root, List<VisualElement> children)
 	{
@@ -32,4 +36,5 @@ public abstract class VENode : IEnumerable<VENode>
 			foreach (var child in node.Children) { stack.Push(child); }
 		}
 	}
+}
 }
