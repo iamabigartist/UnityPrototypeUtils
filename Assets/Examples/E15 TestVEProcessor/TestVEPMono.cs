@@ -10,7 +10,7 @@ public class TestVEPMono : MonoBehaviour
 	void Start()
 	{
 		mgr = new();
-		cat = new() { name = "Kitty", age = 3 };
+		cat = new() { meow = "Kitty", age = 3 };
 		var ser_prop = new SerializedObject(this).FindProperty("cat");
 		var root_node = mgr.GenerateTree(ser_prop);
 	}

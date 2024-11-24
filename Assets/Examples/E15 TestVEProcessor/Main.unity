@@ -318,6 +318,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1493175070}
   - component: {fileID: 1493175069}
+  - component: {fileID: 1493175071}
+  - component: {fileID: 1493175072}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -337,6 +339,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae625589e0a4031a21b781991e206d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cat:
+    name: 
+    age: 0
+    meow: 
+    att: 0
+    TreeChildren: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!4 &1493175070
 Transform:
   m_ObjectHideFlags: 0
@@ -352,6 +363,90 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1493175071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493175068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6911376edce6405382f1ac8394b0be58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: pa
+      Entry: 7
+      Data: 0|Examples.E15_TestVEProcessor.PA, Assembly-CSharp
+    - Name: XX
+      Entry: 1
+      Data: asasd
+    - Name: YY
+      Entry: 3
+      Data: 111
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: pb
+      Entry: 7
+      Data: 1|Examples.E15_TestVEProcessor.PB, Assembly-CSharp
+    - Name: ZZ
+      Entry: 3
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+  AAA: 156
+  AA: 156
+  BB: 
+--- !u!114 &1493175072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493175068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2473a5492a284d4680655e5b4c4526d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cat:
+    name: 
+    age: 87
+    meow: sdsdfsfd
+    att: 76
+    TreeChildren:
+    - rid: 1859516613955158070
+    - rid: 1859516613955158071
+  references:
+    version: 2
+    RefIds:
+    - rid: 1859516613955158070
+      type: {class: Cat, ns: Examples.E15_TestVEProcessor, asm: Assembly-CSharp}
+      data:
+        name: 
+        age: 0
+        meow: 
+        att: 0
+        TreeChildren: []
+    - rid: 1859516613955158071
+      type: {class: Cat, ns: Examples.E15_TestVEProcessor, asm: Assembly-CSharp}
+      data:
+        name: 
+        age: 21
+        meow: asdasdasdasdas
+        att: 14
+        TreeChildren: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

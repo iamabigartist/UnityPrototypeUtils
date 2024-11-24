@@ -5,43 +5,142 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E14 TestSorted.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E14 TestSorted/Main.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E14 TestSorted/Main.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E14 TestSorted/TestSorted.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E14 TestSorted/TestSorted.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestCat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestCat.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestVEPMono.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestVEPMono.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/CustomSerVETreeHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/CustomSerVETreeHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/DefaultProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/DefaultProcessor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/PrimitiveProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/PrimitiveProcessor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/SerMarkVENode_UnitySerProp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/SerMarkVENode_UnitySerProp.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/SerVETreeProcessor_UnitySerProp.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/SerVETreeProcessor_UnitySerProp.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/UnitySerVETree.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Cat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Cat.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Editor/CatDocProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Editor/CatDocProcessor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Editor/PP.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Editor/PP.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestCatMono.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestCatMono.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestProcessorMechan.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestProcessorMechan.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Reflection.Editor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Reflection.Editor.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Bootstrap License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Bootstrap License.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/ExtractSpriteShader.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/ExtractSpriteShader.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/GUIUtilShader.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/GUIUtilShader.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/LazyEditorIconShader.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/LazyEditorIconShader.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/SdfIconShader.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Hidden/SdfIconShader.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/SdfIconAtlas.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/TypeRegistryUserConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/TypeRegistryUserConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Addressables.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Addressables.data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Readme.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/Odin.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/Odin/AttributeDoc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/Odin/AttributeDoc/DocInspectorProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/Odin/AttributeDoc/DocInspectorProcessor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/Odin/AttributeDoc/InspectorDocNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/Odin/AttributeDoc/InspectorDocNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/Odin/ModifyGUISkinAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/Odin/ModifyGUISkinAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/TreeNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Runtime/TreeNode.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/TestTreeDraw.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/TestTreeDraw.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/SerVETree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/SerVETree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVETree.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVETree.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/UnitySerVE/UnitySerVETree.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/VENode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UIElementUtils/VENode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestCat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Editor/TestCat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestCat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Editor/TestCat.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestVEPMono.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/TestVEPMono.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,16 +154,41 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fd37b296550485d95ecaf5a50ed53b21f4200/04/63ea9af3/BaseVerticalCollectionView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fd37b296550485d95ecaf5a50ed53b21f4200/72/74ce0ca7/ListView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eebf6a509b354512a5d405c8a7dd6f889b6600/42/e4b77a71/SerializedObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eebf6a509b354512a5d405c8a7dd6f889b6600/96/8ad65599/SerializedProperty.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eebf6a509b354512a5d405c8a7dd6f889b6600/a3/576e12dc/SerializedPropertyType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eebf6a509b354512a5d405c8a7dd6f889b6600/d3/0e265219/TypeCache.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestWidnowRunner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1a34d7ee85f44ff2a9df5d0ea5a6ee325735b0/11/358038f9/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1a34d7ee85f44ff2a9df5d0ea5a6ee325735b0/74/47397f2b/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/378523c1e6ba4db992c5a1e98a5541ae10fc00/b6/ae009165/Enumerable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/571672bc8bbd450b9c7559c1d5ddd5f419c00/31/b171ce5b/PropertyGroupAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/571672bc8bbd450b9c7559c1d5ddd5f419c00/49/c29fb4d0/BoxGroupAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/571672bc8bbd450b9c7559c1d5ddd5f419c00/6b/0f577b35/HorizontalGroupAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/571672bc8bbd450b9c7559c1d5ddd5f419c00/7f/5c0c5ede/LabelTextAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/571672bc8bbd450b9c7559c1d5ddd5f419c00/cf/14dbcfd3/OnValueChangedAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d11401571214865b309aa91b7983e9065000/29/367b9470/SerializedMonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/0d/721226fc/OnValueChangedAttributeDrawer`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/27/b1b5f39e/OdinAttributeProcessor`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/33/805f0dd9/CompositeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/36/311d6942/OdinPropertyProcessor`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/4c/b262b2bd/Int32Drawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/4d/a841c975/InspectorProperty.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/64/2a35ad96/BoxGroupAttributeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/73/089830c5/ProcessedMemberPropertyResolverExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/97/30e63649/OdinAttributeProcessor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/b0/af557a8d/InspectorPropertyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/d4/566bf648/AliasGetterSetter`4.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/ea/117e3faa/OdinPropertyProcessor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/f1/68a94120/IValueGetterSetter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/f3/02f8a294/LabelTextAttributeDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c0f02fa3498c4d80af4b444158b12cfd303600/ff/6ffc9ce5/GetterSetter`2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2a7fdde9f43450eb67bbb9adb27f62f31600/da/d3b50ebb/GUIStyle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2a7fdde9f43450eb67bbb9adb27f62f31600/ef/7aefd56f/GUISkin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d32f17cdd8844eb7bb40a744231feb4612c800/3e/fe9a741b/SirenixEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d32f17cdd8844eb7bb40a744231feb4612c800/4f/aa0affee/SirenixGUIStyles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d32f17cdd8844eb7bb40a744231feb4612c800/de/199dcf7d/GUIHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eebf6a509b354512a5d405c8a7dd6f889b6600/8d/22b6c0bd/GUIStyleExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eebf6a509b354512a5d405c8a7dd6f889b6600/c0/046589a7/EditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,26 +205,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.5420561",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5420561&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/My project.exe" />
@@ -111,7 +235,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.26f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity Editors\6000.0.26f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -119,7 +243,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.26f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity Editors\6000.0.26f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\HonorPro162021.11.11\Documents\GitHub\UnityPrototypeUtils" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -147,10 +271,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14244">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="45540">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="14244" />
+      <option name="pid" value="45540" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
         <list>
@@ -245,6 +369,7 @@
       <workItem from="1731940252225" duration="190000" />
       <workItem from="1731940607868" duration="3312000" />
       <workItem from="1731982774989" duration="19319000" />
+      <workItem from="1732439199914" duration="28784000" />
     </task>
     <servers />
   </component>
