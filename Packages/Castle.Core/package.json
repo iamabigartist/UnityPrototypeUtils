@@ -1,0 +1,21 @@
+{
+    "name": "org.nuget.castle.core",
+    "version": "5.1.1",
+    "displayName": "Castle.Core",
+    "description": "Castle Core, including DynamicProxy, Logging Abstractions and DictionaryAdapter",
+    "unity": "2018.3",
+    "keywords": [
+        "castle",
+        "dynamicproxy",
+        "dynamic",
+        "proxy",
+        "dynamicproxy2",
+        "dictionaryadapter",
+        "emailsender"
+    ],
+    "author": {
+        "name": "Castle Project Contributors",
+        "email": "",
+        "url": "http://www.castleproject.org/"
+    }
+}
