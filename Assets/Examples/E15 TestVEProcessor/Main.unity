@@ -428,6 +428,7 @@ MonoBehaviour:
     TreeChildren:
     - rid: 1859516613955158070
     - rid: 1859516613955158071
+    - rid: 1859516613955158072
   references:
     version: 2
     RefIds:
@@ -446,6 +447,14 @@ MonoBehaviour:
         age: 21
         meow: asdasdasdasdas
         att: 14
+        TreeChildren: []
+    - rid: 1859516613955158072
+      type: {class: Cat, ns: Examples.E15_TestVEProcessor, asm: Assembly-CSharp}
+      data:
+        name: 
+        age: 0
+        meow: 
+        att: 0
         TreeChildren: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

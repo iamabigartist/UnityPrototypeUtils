@@ -14,5 +14,10 @@ public class TestVEPMono : MonoBehaviour
 		var ser_prop = new SerializedObject(this).FindProperty("cat");
 		var root_node = mgr.GenerateTree(ser_prop);
 	}
+
+	void Update()
+	{
+		cat.age++;
+	}
 }
 }

@@ -27,7 +27,7 @@ public class CatDocProcessor : OdinPropertyProcessor<Cat>
 
 	public override void ProcessMemberProperties(List<InspectorPropertyInfo> propertyInfos)
 	{
-		InspectorDocNode doc = new(new() { new ShowDrawerChainAttribute() })
+		InspectorDocNode doc = new(new() {})
 		{
 			new("一般信息", new() { new BoxGroupAttribute { ShowLabel = true } })
 			{
