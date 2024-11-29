@@ -10,9 +10,8 @@ public class CatDrawer : PropertyDrawer
 {
 	public override VisualElement CreatePropertyGUI(SerializedProperty property)
 	{
-		Debug.Log(property);
 		VisualElement root = new PropertyField(property);
-		root = this.EncloseByDrawerTypeName(root);
+		// root = this.EncloseByDrawerTypeName(root);
 		return root;
 	}
 }

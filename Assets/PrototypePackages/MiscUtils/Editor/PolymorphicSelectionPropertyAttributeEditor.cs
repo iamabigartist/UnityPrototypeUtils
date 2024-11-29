@@ -8,7 +8,6 @@ using UnityEngine.UIElements;
 namespace PrototypePackages.MiscUtils.Editor
 {
 
-
 public static class UnityUISerializeUtil
 {
 	/// Creates instance of passed type and assigns it to managed reference
@@ -75,7 +74,7 @@ public class PolymorphicSelectDrawer : PropertyDrawer
 		var root = new VisualElement();
 		root.Add(CreatePopUp(property));
 		root.Add(new PropertyField(property));
-		root = this.EncloseByDrawerTypeName(root);
+		// root = this.EncloseByDrawerTypeName(root);
 		return root;
 	}
 

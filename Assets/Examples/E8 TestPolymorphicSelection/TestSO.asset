@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1137305049, guid: a4865f1ab4504ed8a368670db22f409c, type: 3}
-  m_Name: InspectorConfig
+  m_Script: {fileID: 11500000, guid: 7f5645e04d3c4deea7e8e12931152bab, type: 3}
+  m_Name: TestSO
   m_EditorClassIdentifier: 
-  enableOdinInInspector: 0
-  defaultEditorBehaviour: 11
-  processMouseMoveInInspector: 1
-  drawingConfig:
-    configs: []
+  name: 
+  age: 0
+  friends:
+  - {fileID: 0}
+  - {fileID: 0}

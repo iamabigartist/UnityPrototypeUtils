@@ -1,1 +1,109 @@
-{}
+trackSelection = true
+refreshSearchWindowsInPlayMode = false
+pickerAdvancedUI = false
+fetchPreview = true
+defaultFlags = 264
+keepOpen = true
+queryFolder = "Assets"
+onBoardingDoNotAskAgain = true
+showPackageIndexes = false
+showStatusBar = true
+scopes = {
+}
+providers = {
+	asset = {
+		active = true
+		priority = 25
+		defaultAction = null
+	}
+	scene = {
+		active = true
+		priority = 50
+		defaultAction = null
+	}
+	adb = {
+		active = true
+		priority = 2500
+		defaultAction = null
+	}
+	presets_provider = {
+		active = true
+		priority = -10
+		defaultAction = null
+	}
+	find = {
+		active = true
+		priority = 25
+		defaultAction = null
+	}
+	packages = {
+		active = false
+		priority = 90
+		defaultAction = null
+	}
+	store = {
+		active = false
+		priority = 100
+		defaultAction = null
+	}
+	profilermarkers = {
+		active = false
+		priority = 100
+		defaultAction = null
+	}
+	performance = {
+		active = true
+		priority = 100
+		defaultAction = null
+	}
+	log = {
+		active = true
+		priority = 210
+		defaultAction = null
+	}
+	menu = {
+		active = true
+		priority = 80
+		defaultAction = null
+	}
+	settings = {
+		active = true
+		priority = 100
+		defaultAction = null
+	}
+	calculator = {
+		active = true
+		priority = 10
+		defaultAction = null
+	}
+	static_methods = {
+		active = false
+		priority = 85
+		defaultAction = null
+	}
+}
+objectSelectors = {
+}
+recentSearches = [
+	"p: t:prefab"
+	"find: Selection"
+	"set:"
+	"set: ref=<$object:none,Examples.E8_TestPolymorphicSelection.TestSO$>"
+	"p: ref=\"Assets/Examples/E8 TestPolymorphicSelection/TestSO.asset\""
+	"p: ref=\"Assets/Examples/E8 TestPolymorphicSelection/TestSO.asset\" ref=<$object:none,UnityEngine.Object$>"
+	"p: ref=\"Assets/Examples/E8 TestPolymorphicSelection/TestSO.asset\" ref=\"none\""
+	"p: ref=\"Assets/Examples/E8 TestPolymorphicSelection/TestSO.asset\" ref=none"
+	"p: ref=<$object:none,UnityEngine.Object$>"
+]
+searchItemFavorites = [
+]
+savedSearchesSortOrder = 0
+showSavedSearchPanel = false
+hideTabs = false
+expandedQueries = [-1765347274 961552606]
+queryBuilder = true
+ignoredProperties = "id;name;classname;imagecontentshash"
+helperWidgetCurrentArea = "all"
+disabledIndexers = ""
+minIndexVariations = 2
+findProviderIndexHelper = true
