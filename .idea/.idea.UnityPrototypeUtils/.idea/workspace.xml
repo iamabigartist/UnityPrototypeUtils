@@ -5,34 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beadd5a4-9076-487c-870a-e69e92595381" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Editor/TestSOEditorWnd.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Editor/TestSOEditorWnd.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestEditorStyle.uss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/ColorPaletteManager.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/ColorPaletteManager.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/Search.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/TypeSelector.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UnityUISerializeUtil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/UnityUISerializeUtil.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityPrototypeUtils/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Editor/CatDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Editor/CatDrawer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/PolymorphicSelectionPropertyAttributeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PrototypePackages/MiscUtils/Editor/PolymorphicSelectionPropertyAttributeEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
@@ -77,6 +67,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/eebf6a509b354512a5d405c8a7dd6f889b6600/d3/0e265219/TypeCache.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E13 TestEditorRunner/Editor/TestWidnowRunner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E15 TestVEProcessor/Cat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/E16 TestListView/Editor/TestPropertyDrawers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E4 UIElement/Editor/TestUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E7 TestTime/TestCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/E8 TestPolymorphicSelection/TestPolymorphic.cs" root0="FORCE_HIGHLIGHTING" />

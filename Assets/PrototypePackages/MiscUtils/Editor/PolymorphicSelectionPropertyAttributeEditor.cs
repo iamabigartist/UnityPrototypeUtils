@@ -2,39 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using PrototypePackages.MiscUtils.Editor.TypeSelector;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 namespace PrototypePackages.MiscUtils.Editor
 {
 
-public static class UnityUISerializeUtil
-{
-	/// Creates instance of passed type and assigns it to managed reference
-	public static void AssignNewInstanceOfTypeToManagedReference(this SerializedProperty serializedProperty, object obj)
-	{
-		// serializedProperty.serializedObject.Update();
-		serializedProperty.managedReferenceValue = obj;
-		serializedProperty.serializedObject.ApplyModifiedProperties();
-	}
 
-	public static (string AssemblyName, string ClassName) GetSplitNamesFromTypename(string typename)
-	{
-		if (string.IsNullOrEmpty(typename))
-			return ("", "");
-		var typeSplitString = typename.Split(char.Parse(" "));
-		var typeClassName = typeSplitString[1];
-		var typeAssemblyName = typeSplitString[0];
-		return (typeAssemblyName, typeClassName);
-	}
-
-	public static Type GetTypeFromTypename(this SerializedProperty serializedProperty)
-	{
-		var names = GetSplitNamesFromTypename(serializedProperty.managedReferenceFieldTypename);
-		var realType = Type.GetType($"{names.ClassName}, {names.AssemblyName}");
-		return realType;
-	}
-}
 
 [CustomPropertyDrawer(typeof(PolymorphicSelectAttribute))]
 public class PolymorphicSelectDrawer : PropertyDrawer
@@ -80,7 +55,7 @@ public class PolymorphicSelectDrawer : PropertyDrawer
 
 	VisualElement CreatePopUp(SerializedProperty property)
 	{
-		var pop_up = new DropdownField("type", type_names, CurChoice(property));
+		var pop_up = new DropdownField("Type", type_names, CurChoice(property));
 		pop_up.RegisterValueChangedCallback(Evt =>
 		{
 			var new_choice = Evt.newValue;
@@ -91,29 +66,5 @@ public class PolymorphicSelectDrawer : PropertyDrawer
 		});
 		return pop_up;
 	}
-
-	// void OnTypeSelectionPopUp(Rect position, SerializedProperty property, GUIContent label)
-	// {
-	// 	var line_rect = position.UpPart(singleLineHeight);
-	// 	var new_choice = EditorGUI.Popup(line_rect, label.text, CurChoice(property), type_names);
-	// 	if (new_choice != CurChoice(property))
-	// 	{
-	// 		RefreshObject(property, new_choice);
-	// 	}
-	// }
-
-	// public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
-	// {
-	// 	return EditorGUI.GetPropertyHeight(property, label, true);
-	// }
-	//
-	// public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
-	// {
-	// 	if (!inited) { Init(property); }
-	// 	EditorGUI.BeginProperty(position, label, property);
-	// 	OnTypeSelectionPopUp(position, property, label);
-	// 	EditorGUI.PropertyField(position, property, GUIContent.none, true);
-	// 	EditorGUI.EndProperty();
-	// }
 }
 }

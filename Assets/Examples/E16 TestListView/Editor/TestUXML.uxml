@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Examples/E16%20TestListView/Editor/GridStyle.uss?fileID=7433441132597879392&amp;guid=282abef7dc6dc1240a16efc313936b3b&amp;type=3#GridStyle" />
+    <ui:VisualElement data-source-type="Examples.E8_TestPolymorphicSelection.Cat, Assembly-CSharp" data-source-path="color.g" style="flex-grow: 1;">
+        <Bindings>
+            <ui:DataBinding property="style.unityTextOutlineColor" data-source-path="color" data-source-type="Examples.E8_TestPolymorphicSelection.Cat, Assembly-CSharp" binding-mode="ToTarget" />
+        </Bindings>
+    </ui:VisualElement>
+    <ui:FloatField value="38.8" class="size-field" style="opacity: 0.5;" />
+</ui:UXML>

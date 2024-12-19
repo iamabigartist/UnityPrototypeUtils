@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f5645e04d3c4deea7e8e12931152bab, type: 3}
-  m_Name: TestSO 2
+  m_Name: TestSO 4
   m_EditorClassIdentifier: 
-  name: aa
-  age: 4
+  name: 
+  age: 0
   friends:
-  - {fileID: 11400000, guid: e00def803a4f56e46b27461e98a1dc96, type: 2}
+  - {fileID: 0}
   - {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestSO 3
   m_EditorClassIdentifier: 
   name: assad
-  age: 4
+  age: 3
   friends:
   - {fileID: 11400000, guid: e00def803a4f56e46b27461e98a1dc96, type: 2}
   - {fileID: 0}

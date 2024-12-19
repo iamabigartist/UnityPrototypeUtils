@@ -9,6 +9,10 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = true
 scopes = {
+	"picker_window_position_offset.075BCD15" = "397.3334;186.6667;996;550"
+	"picker_visibility_flags.075BCD15" = "264"
+	"picker_item_size.075BCD15" = "32"
+	"picker_inspector.075BCD15" = "0"
 }
 providers = {
 	asset = {
@@ -85,6 +89,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"auto refresh"
 	"p: t:prefab"
 	"find: Selection"
 	"set:"
