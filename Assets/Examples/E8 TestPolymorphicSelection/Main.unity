@@ -353,23 +353,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-  - rid: 3052451646291574841
+  - rid: 7096311865763692599
   - rid: 1859516385173176346
+  - rid: 3052451646291574846
   references:
     version: 2
     RefIds:
     - rid: 1859516385173176346
       type: {class: Cat, ns: Examples.E8_TestPolymorphicSelection, asm: Assembly-CSharp}
       data:
-        name: 
+        name: sad
         color: {r: 0, g: 0, b: 0, a: 0}
+        friends:
+        - rid: 7096311865763692608
         attack: 0
-    - rid: 3052451646291574841
-      type: {class: Dog, ns: Examples.E8_TestPolymorphicSelection, asm: Assembly-CSharp}
+    - rid: 3052451646291574846
+      type: {class: Cat, ns: Examples.E8_TestPolymorphicSelection, asm: Assembly-CSharp}
+      data:
+        name: as
+        color: {r: 0, g: 0, b: 0, a: 0}
+        friends: []
+        attack: -0.35
+    - rid: 7096311865763692599
+      type: {class: Cat, ns: Examples.E8_TestPolymorphicSelection, asm: Assembly-CSharp}
+      data:
+        name: sadasd
+        color: {r: 0, g: 0, b: 0, a: 0}
+        friends: []
+        attack: 0
+    - rid: 7096311865763692608
+      type: {class: Cat, ns: Examples.E8_TestPolymorphicSelection, asm: Assembly-CSharp}
       data:
         name: 
         color: {r: 0, g: 0, b: 0, a: 0}
-        speed: 0
+        friends: []
+        attack: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

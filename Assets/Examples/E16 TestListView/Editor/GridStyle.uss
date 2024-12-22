@@ -1,0 +1,3 @@
+.size-field:hover {
+    opacity: 1;
+}

@@ -9,6 +9,8 @@ public class Animal
 {
 	public string name;
 	public Color color;
+	[SerializeReference] [PolymorphicSelect]
+	public List<Animal> friends;
 }
 [Serializable]
 public class Dog : Animal

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestSO
   m_EditorClassIdentifier: 
   name: 
-  age: 0
+  age: 3
   friends:
   - {fileID: 0}
   - {fileID: 0}
