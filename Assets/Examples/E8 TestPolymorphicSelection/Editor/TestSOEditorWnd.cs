@@ -4,7 +4,8 @@ using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 namespace Examples.E8_TestPolymorphicSelection.Editor
 {
-public class TestSOEditorWnd : EditorWindow
+public class TestSOEditorWnd : SearchableEditorWindow
+
 {
 	[MenuItem("Examples/Test Polymorphic Selection/TestSOEditorWnd")]
 	static void Open()

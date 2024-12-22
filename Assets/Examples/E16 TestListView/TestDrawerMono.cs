@@ -6,5 +6,7 @@ public class TestDrawerMono : MonoBehaviour
 {
 	[FormerlySerializedAs("a")] [SerializeReference]
 	public TestTestA TestTestA = new B();
+	
+	
 }
 }

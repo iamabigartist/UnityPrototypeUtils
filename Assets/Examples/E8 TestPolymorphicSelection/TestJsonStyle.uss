@@ -1,0 +1,24 @@
+.JObjectBox {
+    flex-grow: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.JsonText {
+    color: rgb(196, 196, 196);
+    font-size: 16px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(196, 196, 196, 0);
+    border-right-color: rgba(196, 196, 196, 0);
+    border-top-color: rgba(196, 196, 196, 0);
+    border-bottom-color: rgba(196, 196, 196, 0);
+}
+
+.JObjectBox:hover .JsonText {
+    border-left-color: rgb(196, 196, 196);
+    border-right-color: rgb(196, 196, 196);
+    border-top-color: rgb(196, 196, 196);
+    border-bottom-color: rgb(196, 196, 196);
+}
