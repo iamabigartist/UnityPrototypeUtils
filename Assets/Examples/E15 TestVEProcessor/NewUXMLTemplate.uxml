@@ -1,32 +1,34 @@
-<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/Examples/E8%20TestPolymorphicSelection/TestJsonStyle.uss?fileID=7433441132597879392&amp;guid=2f3f79ad72753884a913783bedca8cc0&amp;type=3#TestJsonStyle" />
+<engine:UXML xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
+             editor-extension-mode="False">
+    <Style src="project://database/Assets/Examples/E8%20TestPolymorphicSelection/TestJsonStyle.uss?fileID=7433441132597879392&amp;guid=2f3f79ad72753884a913783bedca8cc0&amp;type=3#TestJsonStyle"/>
     <engine:GroupBox>
-        <engine:VisualElement style="flex-grow: 0; background-color: rgb(56, 56, 56); flex-shrink: 0; flex-direction: row; flex-wrap: wrap;">
+        <engine:VisualElement
+                style="flex-grow: 0; background-color: rgb(56, 56, 56); flex-shrink: 0; flex-direction: row; flex-wrap: wrap;">
             <engine:VisualElement name="field" focusable="true" class="JObjectBox">
-                <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                <engine:Label text="ExcelTable MyTable1" class="JsonText" />
+                <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
                 <engine:VisualElement name="field" focusable="true" class="JObjectBox">
-                    <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                    <engine:Label text="ExcelTable MyTable1" class="JsonText" />
+                    <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                    <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
                 </engine:VisualElement>
                 <engine:VisualElement name="field" focusable="true" class="JObjectBox">
-                    <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                    <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                    <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                </engine:VisualElement>
-            </engine:VisualElement>
-            <engine:VisualElement name="field" focusable="true" class="JObjectBox">
-                <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                <engine:VisualElement name="field" focusable="true" class="JObjectBox">
-                    <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                    <engine:Label text="ExcelTable MyTable1" class="JsonText" />
+                    <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                    <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                    <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
                 </engine:VisualElement>
             </engine:VisualElement>
             <engine:VisualElement name="field" focusable="true" class="JObjectBox">
-                <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                <engine:Label text="ExcelTable MyTable1" class="JsonText" />
-                <engine:Label text="ExcelTable MyTable1" class="JsonText" />
+                <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                <engine:VisualElement name="field" focusable="true" class="JObjectBox">
+                    <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                    <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="field" focusable="true" class="JObjectBox">
+                <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
+                <engine:Label text="ExcelTable MyTable1" class="JsonText"/>
             </engine:VisualElement>
         </engine:VisualElement>
     </engine:GroupBox>
